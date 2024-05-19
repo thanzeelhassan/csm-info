@@ -1,0 +1,5 @@
+npm install -> To install dependencies
+
+npm start -> test locally
+
+npm run deploy -> deploy to production
