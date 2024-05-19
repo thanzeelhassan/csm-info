@@ -7,15 +7,30 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import AboutPage from './Pages/AboutPage';
+import Page2 from './Pages/Page2';
+import ExplorePage from './Pages/ExplorePage';
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
   {
     path: "/csm-info/",
     element: <App />,
   },
   {
-    path: "/",
-    element: <App />,
+    path: "/about/",
+    element: <AboutPage />,
+  },
+  {
+    path: "/page2/",
+    element: <Page2 />,
+  },
+  {
+    path: "/explore/",
+    element: <ExplorePage />,
   },
 ]);
 
