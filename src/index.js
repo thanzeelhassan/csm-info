@@ -8,8 +8,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import AboutPage from './Pages/AboutPage';
-import Page2 from './Pages/Page2';
+import Discussions from './Pages/Discussions';
 import ExplorePage from './Pages/ExplorePage';
+import ColouredMangaPage from './Pages/ColouredMangaPage';
 
 const router = createBrowserRouter([
   {
@@ -25,12 +26,16 @@ const router = createBrowserRouter([
     element: <AboutPage />,
   },
   {
-    path: "/page2/",
-    element: <Page2 />,
+    path: "/discussions/",
+    element: <Discussions />,
   },
   {
     path: "/explore/",
     element: <ExplorePage />,
+  },
+  {
+    path: "/colouredmanga/",
+    element: <ColouredMangaPage />,
   },
 ]);
 
