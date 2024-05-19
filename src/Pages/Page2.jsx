@@ -1,6 +1,9 @@
+import React from 'react'
+import Navbar from '../Components/Navbar/Navbar'
 const Page2 = () => {
   return (
     <div>
+      <Navbar> </Navbar>
       <h1>Other Page</h1>
       <ul>
         <li><a href="https://example.com">Link 1</a></li>
