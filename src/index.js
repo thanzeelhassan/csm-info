@@ -3,11 +3,46 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import AboutPage from './Pages/AboutPage';
+import Discussions from './Pages/Discussions';
+import ExplorePage from './Pages/ExplorePage';
+import ColouredMangaPage from './Pages/ColouredMangaPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/csm-info/",
+    element: <App />,
+  },
+  {
+    path: "/about/",
+    element: <AboutPage />,
+  },
+  {
+    path: "/discussions/",
+    element: <Discussions />,
+  },
+  {
+    path: "/explore/",
+    element: <ExplorePage />,
+  },
+  {
+    path: "/colouredmanga/",
+    element: <ColouredMangaPage />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
