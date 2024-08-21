@@ -6,7 +6,9 @@ function AboutPage() {
   return (
     <div className='background fade-in'>
         <Navbar> </Navbar>
-        <div>About Page</div>
+        <div>
+          <h1 className='h1-class'>About Page</h1>
+        </div>
     </div>
   )
 }
