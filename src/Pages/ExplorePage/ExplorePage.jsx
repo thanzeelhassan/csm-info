@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
+import Navbar from '../../Components/Navbar/Navbar'
 
 function ExplorePage() {
   return (
-    <div>
+    <div className='background fade-in'>
         <Navbar> </Navbar>
         <div>Explore Page</div>
     </div>
