@@ -1,41 +1,75 @@
-.h1-class{
+.h1-class {
     color: black;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.a-class{
+.a-class {
     text-decoration: none;
     color: orange; 
 }
 
-.li-class{
+.li-class {
     color: red;
 }
 
-.body-class{
+.body-class {
     background: grey;
 }
 
-.background{
+.background {
     height: 100%;
     width: 100%;
-    float: left;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: none;
     position: fixed;
     object-fit: cover;
     z-index: -1;
-    /* background: grey; */
-    background-color:rgba(211,45,65, 0.8);
+    background-color: rgba(211,45,65, 0.8);
 }
 
-@keyframes fadeIn{
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.fade-in{
+.fade-in {
     animation: fadeIn 500ms ease-in-out;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.image-class {
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-top: 20px; /* Adds space between text and image */
+}
+
+.image-class:hover {
+    transform: scale(1.1);
+    z-index: 1; /* Ensure the image stays above other content when hovered */
+    position: relative; /* Helps to stack the hovered image above the text */
+}
+
+.image-text {
+    margin-bottom: 30px; /* Adds more space between the text and image */
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* Ensure text stays on top of the image */
+    text-shadow: 0 0 5px #000000;
+    font-family: Outfit;
+}
+ .image-text:hover {
+    color: yellow; 
+  }

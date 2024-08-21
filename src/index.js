@@ -22,19 +22,19 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/about/",
+    path: "/csm-info/about/",
     element: <AboutPage />,
   },
   {
-    path: "/discussions/",
+    path: "/csm-info/discussions/",
     element: <Discussions />,
   },
   {
-    path: "/explore/",
+    path: "/csm-info/explore/",
     element: <ExplorePage />,
   },
   {
-    path: "/colouredmanga/",
+    path: "/csm-info/colouredmanga/",
     element: <ColouredMangaPage />,
   },
 ]);
