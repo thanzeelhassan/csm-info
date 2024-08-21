@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
-import WallBackground from "../Components/WallBackground/WallBackground"
+import Navbar from '../../Components/Navbar/Navbar'
 import './Discussions.css'
 
 const Discussions = () => {
   return (
-    <div>
-      <WallBackground heroCount={1}/>
+    <div className='background fade-in'>
       <Navbar> </Navbar>
       <h1 className='h1-class'>Discussions</h1>
 

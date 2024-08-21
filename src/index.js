@@ -7,10 +7,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import AboutPage from './Pages/AboutPage';
-import Discussions from './Pages/Discussions';
-import ExplorePage from './Pages/ExplorePage';
-import ColouredMangaPage from './Pages/ColouredMangaPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import Discussions from './Pages/Discussions/Discussions';
+import ExplorePage from './Pages/ExplorePage/ExplorePage';
+import ColouredMangaPage from './Pages/ColouredMangaPage/ColouredMangaPage';
 
 const router = createBrowserRouter([
   {

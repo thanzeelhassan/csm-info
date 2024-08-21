@@ -1,0 +1,10 @@
+Colors in Palette
+Color 	Hex 	RGB
+	#eaff7b 	(234,255,123)
+	#00ffab 	(0,255,171)
+	#29bdc1 	(41,189,193)
+	#d84242 	(216,66,66)
+	#913f92 	(145,63,146)
+
+
+    background-color:rgba(211,45,65, 0.8);
