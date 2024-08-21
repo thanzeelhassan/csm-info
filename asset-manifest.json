@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/csm-info/static/css/main.91435474.css",
-    "main.js": "/csm-info/static/js/main.bce910ff.js",
+    "main.css": "/csm-info/static/css/main.18d28638.css",
+    "main.js": "/csm-info/static/js/main.144e381f.js",
     "static/js/453.cfd5ad8a.chunk.js": "/csm-info/static/js/453.cfd5ad8a.chunk.js",
     "static/media/1345656.png": "/csm-info/static/media/1345656.3a20a9c00112fc91d6ba.png",
     "static/media/1278939.png": "/csm-info/static/media/1278939.a1f1e4452eeb7548a7a0.png",
     "static/media/1319295.jpeg": "/csm-info/static/media/1319295.78854515fb0e4f078b3c.jpeg",
     "static/media/1298385.jpg": "/csm-info/static/media/1298385.315feafea847cde38cbe.jpg",
     "static/media/1343977.jpeg": "/csm-info/static/media/1343977.50ebbc1644d8637496ff.jpeg",
+    "static/media/firepunch1.jpg": "/csm-info/static/media/firepunch1.3d7ed9ea400763b52edc.jpg",
+    "static/media/1296717_800px.jpg": "/csm-info/static/media/1296717_800px.b2d5c88cfaefb3d551b9.jpg",
+    "static/media/github-mark-white.svg": "/csm-info/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/csm-info/index.html",
-    "main.91435474.css.map": "/csm-info/static/css/main.91435474.css.map",
-    "main.bce910ff.js.map": "/csm-info/static/js/main.bce910ff.js.map",
+    "main.18d28638.css.map": "/csm-info/static/css/main.18d28638.css.map",
+    "main.144e381f.js.map": "/csm-info/static/js/main.144e381f.js.map",
     "453.cfd5ad8a.chunk.js.map": "/csm-info/static/js/453.cfd5ad8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91435474.css",
-    "static/js/main.bce910ff.js"
+    "static/css/main.18d28638.css",
+    "static/js/main.144e381f.js"
   ]
 }
