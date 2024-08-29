@@ -1,5 +1,5 @@
 import './Hero.css'
-import arrow_btn from '../../assets/arrow_btn.png'
+import arrow_btn from '../../assets/button/arrow_btn.png'
 import PropTypes from 'prop-types';
 
 const Hero = ({heroData, setHeroCount, heroCount}) => {
