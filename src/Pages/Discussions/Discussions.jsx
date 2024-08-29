@@ -39,11 +39,11 @@ const Discussions = () => {
   return (
     <div className='discussion-background fade-in'>
       <Navbar> </Navbar>
-      <h1 className='h1-class'>Discussions</h1>
+      <h1 className='discussion-h1-class'>Discussions</h1>
 
-      <h2 className='h1-class'>r/ChainsawMan</h2>
+      <h2 className='discussion-h1-class'>r/ChainsawMan</h2>
       
-      <div className='container'>
+      <div className='discussion-container'>
         <table {...getTableProps()}>
           <thead>
               {headerGroups.map((headerGroup) => (

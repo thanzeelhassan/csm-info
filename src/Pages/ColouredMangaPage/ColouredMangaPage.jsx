@@ -7,7 +7,7 @@ import github_icon from '../../assets/github-icon/github-mark-white.svg';
 
 const ColouredMangaPage = () => {
   return (
-    <div className='background fade-in'>
+    <div className='colouredMangaPage-background fade-in'>
       <Navbar />
       <div className='image-container'>
         <div className='image-wrapper'>
