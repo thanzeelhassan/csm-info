@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Discussions.css";
-import fakeData from "../../assets/MOCK_DATA.json";
 import DiscussionData from "../../assets/discussions/Chainsawman Subreddit/chainsawman_discussions.json";
 import { useTable } from "react-table";
 import { useMemo } from "react";
