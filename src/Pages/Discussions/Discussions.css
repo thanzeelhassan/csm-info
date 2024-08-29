@@ -1,31 +1,35 @@
 .discussion-h1-class {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
 }
 
 .discussion-background {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    object-fit: cover;
-    z-index: -1;
-    background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
-    background: linear-gradient(45deg, #49a09d, #5f2c82);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-in {
-    animation: fadeIn 500ms ease-in-out;
+  animation: fadeIn 500ms ease-in-out;
 }
 
 body {
-  margin: 0;
+  margin: 20;
   background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
   background: linear-gradient(45deg, #49a09d, #5f2c82);
   font-family: sans-serif;
@@ -43,14 +47,15 @@ body {
 }
 
 table {
-  width: 2000px;
-  height: 2000px;
+  width: 1000px;
+  height: 1000px;
   border-collapse: collapse;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
