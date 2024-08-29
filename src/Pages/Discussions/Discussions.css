@@ -4,15 +4,16 @@
     margin-top: 20px;
     font-size: 50px;
 }
-/* 
+
 .discussion-background {
     height: 100%;
     width: 100%;
     position: fixed;
     object-fit: cover;
     z-index: -1;
-    background-color: rgba(211,45,65, 0.8);
-} */
+    background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
 
 @keyframes fadeIn {
     from {opacity: 0;}
