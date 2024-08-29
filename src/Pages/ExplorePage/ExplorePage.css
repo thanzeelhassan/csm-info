@@ -1,23 +1,9 @@
-.h1-class{
+.explore-h1-class{
     color: white;
     text-align: center;
     margin-top: 20px;
 }
-
-.a-class{
-    text-decoration: none;
-    color: blue; 
-}
-
-.li-class{
-    color: red;
-}
-
-.body-class{
-    background: grey;
-}
-
-.background {
+.explore-background {
     height: 100%;
     width: 100%;
     position: fixed;
