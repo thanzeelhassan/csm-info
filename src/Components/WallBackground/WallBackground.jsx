@@ -1,7 +1,7 @@
 import './WallBackground.css'
-import image1 from '../../assets/background/white-wall-bg.jpg'
-import image2 from '../../assets/background/black-flowers.jpg'
-import image3 from '../../assets/background/black-wall.jpg'
+import image1 from '../../assets/images/background/white-wall-bg.jpg'
+import image2 from '../../assets/images/background/black-flowers.jpg'
+import image3 from '../../assets/images/background/black-wall.jpg'
 
 import PropTypes from 'prop-types';
 

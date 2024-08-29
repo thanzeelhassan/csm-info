@@ -1,43 +1,89 @@
-.h1-class{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
+.discussion-h1-class {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
 }
 
-.a-class{
-    text-decoration: none;
-    color: orange; 
+.discussion-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
 }
 
-.li-class{
-    color: red;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.body-class{
-    background: grey;
+.fade-in {
+  animation: fadeIn 500ms ease-in-out;
 }
 
-.background{
-    height: 100%;
-    width: 100%;
-    float: left;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: none;
-    position: fixed;
-    object-fit: cover;
-    z-index: -1;
-    /* background: grey; */
-    background-color:rgba(211,45,65, 0.8);
+body {
+  margin: 20;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
-@keyframes fadeIn{
-    from {opacity: 0;}
-    to {opacity: 1;}
+.discussion-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 600px;
+  overflow-y: scroll;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.fade-in{
-    animation: fadeIn 500ms ease-in-out;
+table {
+  width: 1000px;
+  height: 1000px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
 }

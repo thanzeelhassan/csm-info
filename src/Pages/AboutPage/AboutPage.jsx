@@ -4,10 +4,10 @@ import './AboutPage.css'
 
 function AboutPage() {
   return (
-    <div className='background fade-in'>
+    <div className='about-background fade-in'>
         <Navbar> </Navbar>
         <div>
-          <h1 className='h1-class'>About Page</h1>
+          <h1 className='about-h1-class'>About Page</h1>
         </div>
     </div>
   )

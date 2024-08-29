@@ -1,9 +1,9 @@
 import './Background.css'
-import image1 from '../../assets/1278939.png'
-import image2 from '../../assets/1343977.jpeg'
-import image3 from '../../assets/1345656.png'
-import image4 from '../../assets/1319295.jpeg'
-import image5 from '../../assets/1298385.jpg'
+import image1 from '../../assets/images/1278939.png'
+import image2 from '../../assets/images/1343977.jpeg'
+import image3 from '../../assets/images/1345656.png'
+import image4 from '../../assets/images/1319295.jpeg'
+import image5 from '../../assets/images/1298385.jpg'
 import PropTypes from 'prop-types';
 
 const Background = ({heroCount}) => {
