@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import './ColouredMangaPage.css';
-import chainsawman_image2 from '../../assets/1296717_800px.jpg';
-import firepunch_image from '../../assets/firepunch1.jpg';
+import chainsawman_image2 from '../../assets/images/1296717_800px.jpg';
+import firepunch_image from '../../assets/images/firepunch1.jpg';
 import github_icon from '../../assets/github-icon/github-mark-white.svg';
 
 const ColouredMangaPage = () => {
   return (
-    <div className='background fade-in'>
+    <div className='colouredMangaPage-background fade-in'>
       <Navbar />
       <div className='image-container'>
         <div className='image-wrapper'>

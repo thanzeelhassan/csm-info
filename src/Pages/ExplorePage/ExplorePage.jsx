@@ -4,10 +4,10 @@ import './ExplorePage.css'
 
 function ExplorePage() {
   return (
-    <div className='background fade-in'>
+    <div className='explore-background fade-in'>
         <Navbar> </Navbar>
         <div>
-          <h1 className='h1-class'>Explore Page</h1>
+          <h1 className='explore-h1-class'>Explore Page</h1>
         </div>
     </div>
   )
