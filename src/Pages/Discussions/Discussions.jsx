@@ -11,7 +11,7 @@ const Discussions = () => {
   const batDevilArcData = useMemo(() => Bat_Devil_Arc_Data, []);
 
   return (
-    <div className="discussion-background fade-in">
+    <div className="discussion-background-1 fade-in">
       <Navbar> </Navbar>
       <h1 className="discussion-h1-class">Chapter Discussion Index </h1>
       <br />

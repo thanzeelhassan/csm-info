@@ -1,7 +1,19 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.discussion-background {
+  min-height: 100vh; /* Ensures the background covers the full viewport height */
+  padding-bottom: 50px; /* Adds some space at the bottom of the page */
+}
+
 .discussion-container {
   max-height: 600px;
-  overflow-y: scroll;
-  margin: 50px auto; /* Centering the container with margin */
+  overflow-y: auto; /* Allows the table itself to scroll if it exceeds 600px height */
+  margin: 20px auto; /* Centers the container with some margin */
   width: 90%; /* Adjust the width as needed */
   max-width: 1200px; /* Set a max-width for larger screens */
 }
