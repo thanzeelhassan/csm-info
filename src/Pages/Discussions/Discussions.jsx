@@ -3,12 +3,14 @@ import Navbar from "../../Components/Navbar/Navbar";
 import "./Discussions.css";
 import Introduction_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/1. Introduction_Arc.json";
 import Bat_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
+import Eternity_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/3. Eternity Devil Arc.json";
 import { useMemo } from "react";
 import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
 
 const Discussions = () => {
   const introductionArcData = useMemo(() => Introduction_Arc_Data, []);
   const batDevilArcData = useMemo(() => Bat_Devil_Arc_Data, []);
+  const eternityDevilArcData = useMemo(() => Eternity_Devil_Arc_Data, []);
 
   return (
     <div className="discussion-background-1 fade-in">
@@ -39,6 +41,32 @@ const Discussions = () => {
       <div>
         <h1 className="discussion-h2-class">Bat Devil Arc </h1>
         <DiscussionTable data={batDevilArcData} />
+      </div>
+
+      <div>
+        <h1 className="discussion-h2-class">Eternity Devil Arc</h1>
+        <DiscussionTable data={eternityDevilArcData} />
+      </div>
+
+      <div>
+        <h1 className="discussion-h2-class">Katana Man Arc</h1>
+        <DiscussionTable data={eternityDevilArcData} />
+      </div>
+      <div>
+        <h1 className="discussion-h2-class">Bomb Girl Arc</h1>
+        <DiscussionTable data={eternityDevilArcData} />
+      </div>
+      <div>
+        <h1 className="discussion-h2-class">International Assassins Arc</h1>
+        <DiscussionTable data={eternityDevilArcData} />
+      </div>
+      <div>
+        <h1 className="discussion-h2-class">Gun Devil Arc</h1>
+        <DiscussionTable data={eternityDevilArcData} />
+      </div>
+      <div>
+        <h1 className="discussion-h2-class">Control Devil Arc</h1>
+        <DiscussionTable data={eternityDevilArcData} />
       </div>
     </div>
   );
