@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Discussions.css";
-import DiscussionData from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/1. Introduction_Arc.json";
+import Introduction_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/1. Introduction_Arc.json";
+import Bat_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
 import { useMemo } from "react";
 import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
 
 const Discussions = () => {
-  const data = useMemo(() => DiscussionData, []);
+  const introductionArcData = useMemo(() => Introduction_Arc_Data, []);
+  const batDevilArcData = useMemo(() => Bat_Devil_Arc_Data, []);
 
   return (
     <div className="discussion-background fade-in">
@@ -29,8 +31,15 @@ const Discussions = () => {
         that fans made over the course of serialisation of this series.
       </p>
       <br />
-      {/* Use the DiscussionTable component here */}
-      <DiscussionTable data={data} />
+      <div>
+        <h1 className="discussion-h2-class">Introduction Arc </h1>
+        <DiscussionTable data={introductionArcData} />
+      </div>
+
+      <div>
+        <h1 className="discussion-h2-class">Bat Devil Arc </h1>
+        <DiscussionTable data={batDevilArcData} />
+      </div>
     </div>
   );
 };
