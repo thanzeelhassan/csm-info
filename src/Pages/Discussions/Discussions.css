@@ -1,9 +1,18 @@
 .discussion-h1-class {
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0 0 5px white;
+}
+
+.discussion-h2-class {
+  color: black;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 0 0 5px white;
+  margin-left: 25%;
 }
 
 .discussion-background {
@@ -35,59 +44,6 @@ body {
   background: linear-gradient(45deg, #49a09d, #5f2c82);
   font-family: sans-serif;
   font-weight: 100;
-}
-
-.discussion-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-height: 600px;
-  overflow-y: scroll;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-top: 100px;
-}
-
-table {
-  width: 1000px;
-  height: 1000px;
-  border-collapse: collapse;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-th,
-td {
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-
-th {
-  text-align: left;
-}
-
-thead th {
-  background-color: #55608f;
-}
-
-tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-tbody td {
-  position: relative;
-}
-
-tbody td:hover:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -9999px;
-  bottom: -9999px;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: -1;
 }
 
 .paragraph {
