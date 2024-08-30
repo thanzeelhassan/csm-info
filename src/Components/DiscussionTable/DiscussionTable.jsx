@@ -31,10 +31,6 @@ const DiscussionTable = ({ data }) => {
         Header: "Release Date",
         accessor: "release date",
       },
-      {
-        Header: "Arc",
-        accessor: "arc name",
-      },
     ],
     []
   );
