@@ -3,6 +3,7 @@
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
+  text-shadow: 0 0 5px #000000;
 }
 
 .discussion-background {
@@ -44,6 +45,7 @@ body {
   overflow-y: scroll;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  margin-top: 100px;
 }
 
 table {
@@ -86,4 +88,12 @@ tbody td:hover:before {
   bottom: -9999px;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: -1;
+}
+
+.paragraph {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 100;
 }

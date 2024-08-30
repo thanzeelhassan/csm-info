@@ -1,78 +1,36 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Discussions.css";
-import DiscussionData from "../../assets/discussions/Chainsawman Subreddit/chainsawman_discussions.json";
-import { useTable } from "react-table";
+import DiscussionData from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/1. Introduction_Arc.json";
 import { useMemo } from "react";
+import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
 
 const Discussions = () => {
   const data = useMemo(() => DiscussionData, []);
-  const columns = useMemo(
-    () => [
-      {
-        Header: "Chapter Number",
-        accessor: "chapter number",
-      },
-      {
-        Header: "Chapter Title",
-        accessor: "chapter title",
-      },
-      {
-        Header: "Reddit Thread",
-        accessor: "reddit thread",
-      },
-      {
-        Header: "Volume",
-        accessor: "volume number",
-      },
-      {
-        Header: "Release Date",
-        accessor: "release date",
-      },
-      {
-        Header: "Arc",
-        accessor: "arc name",
-      },
-    ],
-    []
-  );
-
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({ columns, data });
 
   return (
     <div className="discussion-background fade-in">
       <Navbar> </Navbar>
-      <h1 className="discussion-h1-class">Discussions</h1>
-
-      <h2 className="discussion-h1-class">r/ChainsawMan</h2>
-
-      <div className="discussion-container">
-        <table {...getTableProps()}>
-          <thead>
-            {headerGroups.map((headerGroup) => (
-              <tr {...headerGroup.getHeaderGroupProps()}>
-                {headerGroup.headers.map((column) => (
-                  <th {...column.getHeaderProps}>{column.render("Header")}</th>
-                ))}
-              </tr>
-            ))}
-          </thead>
-
-          <tbody {...getTableBodyProps()}>
-            {rows.map((row) => {
-              prepareRow(row);
-              return (
-                <tr {...row.getRowProps()}>
-                  {row.cells.map((cell) => (
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                  ))}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+      <h1 className="discussion-h1-class">Chapter Discussion Index </h1>
+      <br />
+      <p className="paragraph">
+        List of all chapter discussions on r/Chainsawman.
+      </p>
+      <br />
+      <p className="paragraph">
+        Chapters have been tabulated and divided into arcs for ease of access
+        for readers.
+      </p>
+      <p className="paragraph">
+        All the release dates are Japanese release dates.
+      </p>
+      <p className="paragraph">
+        The arc name/title and the distribution isn't official and is something
+        that fans made over the course of serialisation of this series.
+      </p>
+      <br />
+      {/* Use the DiscussionTable component here */}
+      <DiscussionTable data={data} />
     </div>
   );
 };
