@@ -12,10 +12,10 @@ html {
 
 .discussion-container {
   max-height: 600px;
-  overflow-y: auto; /* Allows the table itself to scroll if it exceeds 600px height */
-  margin: 20px auto; /* Centers the container with some margin */
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds 600px */
+  margin: 20px auto; /* Centers the container */
   width: 90%; /* Adjust the width as needed */
-  max-width: 1200px; /* Set a max-width for larger screens */
+  max-width: 1600px; /* Set a max-width for larger screens */
 }
 
 table {
