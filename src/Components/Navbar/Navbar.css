@@ -5,6 +5,7 @@
   margin: 40px 120px;
   color: white;
   z-index: 1000; /* A high z-index ensures it stays above other content */
+  position: relative; /* Ensure z-index takes effect */
 }
 
 .nav-logo {
@@ -34,7 +35,6 @@
   color: #262626;
 }
 
-/* styles.css */
 .nav-link {
   text-decoration: none;
   color: inherit;

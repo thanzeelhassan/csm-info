@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="nav">
-      <div className="nav-logo">CSM Info</div>
+      <div className="nav-logo">
+        <Link to="/csm-info" className="nav-link">
+          CSM Info
+        </Link>
+      </div>
       <ul className="nav-menu">
         <li>
           <Link to="/csm-info" className="nav-link">
