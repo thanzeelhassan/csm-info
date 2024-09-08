@@ -16,11 +16,10 @@
 }
 
 .discussion-background-1 {
-  min-height: 100vh; /* Ensures the background covers the full viewport height */
-  padding-bottom: 50px; /* Adds some space at the bottom of the page */
-  height: 100%;
+  min-height: 100%; /* Allows the background to grow with content */
+  padding-bottom: 50px;
   width: 100%;
-  position: fixed;
+  position: relative; /* Changed from fixed to allow content to scroll */
   object-fit: cover;
   z-index: -1;
   background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
@@ -46,6 +45,7 @@ body {
   background: linear-gradient(45deg, #49a09d, #5f2c82);
   font-family: sans-serif;
   font-weight: 100;
+  height: auto; /* Allow body to adjust to content height */
 }
 
 .paragraph {
