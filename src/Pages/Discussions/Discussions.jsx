@@ -13,60 +13,63 @@ const Discussions = () => {
   const eternityDevilArcData = useMemo(() => Eternity_Devil_Arc_Data, []);
 
   return (
-    <div className="discussion-background-1 fade-in">
+    <div>
       <Navbar> </Navbar>
-      <h1 className="discussion-h1-class">Chapter Discussion Index </h1>
-      <br />
-      <p className="paragraph">
-        List of all chapter discussions on r/Chainsawman.
-      </p>
-      <br />
-      <p className="paragraph">
-        Chapters have been tabulated and divided into arcs for ease of access
-        for readers.
-      </p>
-      <p className="paragraph">
-        All the release dates are Japanese release dates.
-      </p>
-      <p className="paragraph">
-        The arc name/title and the distribution isn't official and is something
-        that fans made over the course of serialisation of this series.
-      </p>
-      <br />
-      <div>
-        <h1 className="discussion-h2-class">Introduction Arc </h1>
-        <DiscussionTable data={introductionArcData} />
-      </div>
+      <div className="discussion-background-1 fade-in">
+        <h1 className="discussion-h1-class">Chapter Discussion Index </h1>
+        <br />
+        <p className="paragraph">
+          List of all chapter discussions on r/Chainsawman.
+        </p>
+        <br />
+        <p className="paragraph">
+          Chapters have been tabulated and divided into arcs for ease of access
+          for readers.
+        </p>
+        <p className="paragraph">
+          All the release dates are Japanese release dates.
+        </p>
+        <p className="paragraph">
+          The arc name/title and the distribution isn't official and is
+          something that fans made over the course of serialisation of this
+          series.
+        </p>
+        <br />
+        <div>
+          <h1 className="discussion-h2-class">Introduction Arc </h1>
+          <DiscussionTable data={introductionArcData} />
+        </div>
 
-      <div>
-        <h1 className="discussion-h2-class">Bat Devil Arc </h1>
-        <DiscussionTable data={batDevilArcData} />
-      </div>
+        <div>
+          <h1 className="discussion-h2-class">Bat Devil Arc </h1>
+          <DiscussionTable data={batDevilArcData} />
+        </div>
 
-      <div>
-        <h1 className="discussion-h2-class">Eternity Devil Arc</h1>
-        <DiscussionTable data={eternityDevilArcData} />
-      </div>
+        <div>
+          <h1 className="discussion-h2-class">Eternity Devil Arc</h1>
+          <DiscussionTable data={eternityDevilArcData} />
+        </div>
 
-      <div>
-        <h1 className="discussion-h2-class">Katana Man Arc</h1>
-        <DiscussionTable data={eternityDevilArcData} />
-      </div>
-      <div>
-        <h1 className="discussion-h2-class">Bomb Girl Arc</h1>
-        <DiscussionTable data={eternityDevilArcData} />
-      </div>
-      <div>
-        <h1 className="discussion-h2-class">International Assassins Arc</h1>
-        <DiscussionTable data={eternityDevilArcData} />
-      </div>
-      <div>
-        <h1 className="discussion-h2-class">Gun Devil Arc</h1>
-        <DiscussionTable data={eternityDevilArcData} />
-      </div>
-      <div>
-        <h1 className="discussion-h2-class">Control Devil Arc</h1>
-        <DiscussionTable data={eternityDevilArcData} />
+        <div>
+          <h1 className="discussion-h2-class">Katana Man Arc</h1>
+          <DiscussionTable data={eternityDevilArcData} />
+        </div>
+        <div>
+          <h1 className="discussion-h2-class">Bomb Girl Arc</h1>
+          <DiscussionTable data={eternityDevilArcData} />
+        </div>
+        <div>
+          <h1 className="discussion-h2-class">International Assassins Arc</h1>
+          <DiscussionTable data={eternityDevilArcData} />
+        </div>
+        <div>
+          <h1 className="discussion-h2-class">Gun Devil Arc</h1>
+          <DiscussionTable data={eternityDevilArcData} />
+        </div>
+        <div>
+          <h1 className="discussion-h2-class">Control Devil Arc</h1>
+          <DiscussionTable data={eternityDevilArcData} />
+        </div>
       </div>
     </div>
   );
