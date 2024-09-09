@@ -16,6 +16,7 @@ html {
   margin: 20px auto; /* Centers the container */
   width: 90%; /* Adjust the width as needed */
   max-width: 1600px; /* Set a max-width for larger screens */
+  font-size: 20px;
 }
 
 table {
@@ -23,21 +24,23 @@ table {
   border-collapse: collapse;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Ensures the table columns have consistent widths */
 }
 
 th,
 td {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  color: #000000;
+  word-wrap: break-word; /* Forces content to wrap within the cell */
 }
 
 th {
-  text-align: left;
+  text-align: center;
 }
 
 thead th {
-  background-color: #55608f;
+  background-color: #e5e1db;
 }
 
 tbody tr:hover {
@@ -46,6 +49,7 @@ tbody tr:hover {
 
 tbody td {
   position: relative;
+  text-align: center;
 }
 
 tbody td:hover:before {

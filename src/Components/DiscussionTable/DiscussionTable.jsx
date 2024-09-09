@@ -19,7 +19,7 @@ const DiscussionTable = ({ data }) => {
         accessor: "reddit thread",
         Cell: ({ value }) => (
           <a href={value} target="_blank" rel="noopener noreferrer">
-            {value}
+            Link
           </a>
         ), // clickable link
       },
