@@ -50,15 +50,17 @@ tbody tr:hover {
 tbody td {
   position: relative;
   text-align: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  word-wrap: break-word; /* Ensure long words or URLs wrap within the cell */
 }
 
-tbody td:hover:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -9999px;
-  bottom: -9999px;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: -1;
+a {
+  pointer-events: auto; /* Ensure links are clickable */
+}
+
+td a {
+  position: relative;
+  z-index: 1; /* Puts the link on top of any other content */
 }
