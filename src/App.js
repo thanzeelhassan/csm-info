@@ -5,9 +5,9 @@ import Hero from "./Components/Hero/Hero";
 
 const App = () => {
   let heroData = [
-    { text1: "CSM", text2: "Info" },
-    { text1: "CSM", text2: "Info" },
-    { text1: "CSM", text2: "Info" },
+    { text1: "Angel", text2: "Devil" },
+    { text1: "Weapon", text2: "Hybrids" },
+    { text1: "Control", text2: "Devil" },
   ];
   const [heroCount, setHeroCount] = useState(0);
 
