@@ -32,18 +32,18 @@ const Discussions = () => {
       <div className="discussion-background-1 fade-in">
         <h1 className="discussion-h1-class">Chapter Discussion Index </h1>
         <br />
-        <p className="paragraph">
+        <p className="discussion-paragraph">
           List of all chapter discussions on r/Chainsawman.
         </p>
         <br />
-        <p className="paragraph">
+        <p className="discussion-paragraph">
           Chapters have been tabulated and divided into arcs for ease of access
           for readers.
         </p>
-        <p className="paragraph">
+        <p className="discussion-paragraph">
           All the release dates are Japanese release dates.
         </p>
-        <p className="paragraph">
+        <p className="discussion-paragraph">
           The arc name/title and the distribution isn't official and is
           something that fans made over the course of serialisation of this
           series.
