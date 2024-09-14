@@ -1,11 +1,11 @@
 .colouredMangaPage-background {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    object-fit: cover;
-    z-index: -1;
-    background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
-    background: linear-gradient(45deg, #49a09d, #5f2c82);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
 }
 
 /* body {
@@ -17,81 +17,85 @@
   } */
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-in {
-    animation: fadeIn 500ms ease-in-out;
+  animation: fadeIn 500ms ease-in-out;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+.colouredMangaPage-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.image-wrapper {
-    text-align: center;
-    margin: 0 20px;
+.colouredMangaPage-image-wrapper {
+  text-align: center;
+  margin: 0 20px;
 }
 
-.image-class {
-    width: 500px;
-    height: auto;
-    transition: transform 0.3s ease;
-    margin-top: 20px; /* Adds space between text and image */
+.colouredMangaPage-image-class {
+  width: 500px;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-top: 20px; /* Adds space between text and image */
 }
 
-.image-class:hover {
-    transform: scale(1.1);
-    z-index: 1; /* Ensure the image stays above other content when hovered */
-    position: relative; /* Helps to stack the hovered image above the text */
+.colouredMangaPage-image-class:hover {
+  transform: scale(1.1);
+  z-index: 1; /* Ensure the image stays above other content when hovered */
+  position: relative; /* Helps to stack the hovered image above the text */
 }
 
-.image-text {
-    margin-bottom: 30px; /* Adds more space between the text and image */
-    font-size: 3em;
-    color: white;
-    font-weight: bold;
-    position: relative;
-    z-index: 2; /* Ensure text stays on top of the image */
-    text-shadow: 0 0 5px #000000;
-    font-family: Outfit;
+.colouredMangaPage-image-text {
+  margin-bottom: 30px; /* Adds more space between the text and image */
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 2; /* Ensure text stays on top of the image */
+  text-shadow: 0 0 5px #000000;
+  font-family: Outfit;
 }
 
-.image-text:hover {
-    color: yellow; 
+.colouredMangaPage-image-text:hover {
+  color: yellow;
 }
 
-.source-link {
-    font-size: 1em; /* Smaller font size for the source links */
-    color: #ddd; /* Light color to match the theme */
-    margin-top: 10px;
+.colouredMangaPage-source-link {
+  font-size: 1em; /* Smaller font size for the source links */
+  color: #ddd; /* Light color to match the theme */
+  margin-top: 10px;
 }
 
-.source-link a {
-    color: #ddd; /* Inherit color for the anchor tag */
-    text-decoration: none;
+.colouredMangaPage-source-link a {
+  color: #ddd; /* Inherit color for the anchor tag */
+  text-decoration: none;
 }
 
-.source-link a:hover {
-    text-decoration: underline; /* Underline on hover for visibility */
+.colouredMangaPage-source-link a:hover {
+  text-decoration: underline; /* Underline on hover for visibility */
 }
 
-.github-link {
-    display: block; /* Change to block to ensure it takes up the full width, pushing it below the image */
-    margin-top: 10px;
+.colouredMangaPage-github-link {
+  display: block; /* Change to block to ensure it takes up the full width, pushing it below the image */
+  margin-top: 10px;
 }
 
-.github-icon {
-    width: 24px; /* Adjust the size of the icon */
-    height: 24px;
-    transition: transform 0.3s ease;
-    margin-top: 30px;
+.colouredMangaPage-github-icon {
+  width: 24px; /* Adjust the size of the icon */
+  height: 24px;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
 }
 
-.github-icon:hover {
-    transform: scale(1.2); /* Slightly increase the size on hover */
+.colouredMangaPage-github-icon:hover {
+  transform: scale(1.2); /* Slightly increase the size on hover */
 }

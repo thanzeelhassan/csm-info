@@ -29,7 +29,7 @@ const Hero = ({ heroData, setHeroCount, heroCount }) => {
   );
 };
 Hero.propTypes = {
-  heroCount: PropTypes.number.isRequired, // Add PropTypes validation
+  heroCount: PropTypes.number.isRequired,
   heroData: PropTypes.array.isRequired,
   setHeroCount: PropTypes.func.isRequired,
 };

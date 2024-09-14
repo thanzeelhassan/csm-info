@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import Background from "./Components/Background/Background";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
+import "./App.css";
 
 const App = () => {
   let heroData = [
-    { text1: "CSM", text2: "Info" },
-    { text1: "CSM", text2: "Info" },
-    { text1: "CSM", text2: "Info" },
+    { text1: "Angel", text2: "Devil" },
+    { text1: "Weapon", text2: "Hybrids" },
+    { text1: "Control", text2: "Devil" },
   ];
   const [heroCount, setHeroCount] = useState(0);
 
