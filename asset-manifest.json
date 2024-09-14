@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/csm-info/static/css/main.73fa2770.css",
-    "main.js": "/csm-info/static/js/main.ebe06dd6.js",
+    "main.css": "/csm-info/static/css/main.fd0c409e.css",
+    "main.js": "/csm-info/static/js/main.004b9d1e.js",
     "static/js/453.cfd5ad8a.chunk.js": "/csm-info/static/js/453.cfd5ad8a.chunk.js",
     "static/media/Angel_devil.png": "/csm-info/static/media/Angel_devil.a1f1e4452eeb7548a7a0.png",
     "static/media/Weapons.jpeg": "/csm-info/static/media/Weapons.78854515fb0e4f078b3c.jpeg",
@@ -10,12 +10,12 @@
     "static/media/1296717_800px.jpg": "/csm-info/static/media/1296717_800px.b2d5c88cfaefb3d551b9.jpg",
     "static/media/github-mark-white.svg": "/csm-info/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/csm-info/index.html",
-    "main.73fa2770.css.map": "/csm-info/static/css/main.73fa2770.css.map",
-    "main.ebe06dd6.js.map": "/csm-info/static/js/main.ebe06dd6.js.map",
+    "main.fd0c409e.css.map": "/csm-info/static/css/main.fd0c409e.css.map",
+    "main.004b9d1e.js.map": "/csm-info/static/js/main.004b9d1e.js.map",
     "453.cfd5ad8a.chunk.js.map": "/csm-info/static/js/453.cfd5ad8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73fa2770.css",
-    "static/js/main.ebe06dd6.js"
+    "static/css/main.fd0c409e.css",
+    "static/js/main.004b9d1e.js"
   ]
 }
