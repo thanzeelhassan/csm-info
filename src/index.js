@@ -1,16 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import AboutPage from './Pages/AboutPage/AboutPage';
-import Discussions from './Pages/Discussions/Discussions';
-import ExplorePage from './Pages/ExplorePage/ExplorePage';
-import ColouredMangaPage from './Pages/ColouredMangaPage/ColouredMangaPage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Discussions from "./Pages/Discussions/Discussions";
+import ColouredMangaPage from "./Pages/ColouredMangaPage/ColouredMangaPage";
 
 const router = createBrowserRouter([
   {
@@ -22,16 +17,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/csm-info/about/",
-    element: <AboutPage />,
-  },
-  {
     path: "/csm-info/discussions/",
     element: <Discussions />,
-  },
-  {
-    path: "/csm-info/explore/",
-    element: <ExplorePage />,
   },
   {
     path: "/csm-info/colouredmanga/",
@@ -39,10 +26,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
