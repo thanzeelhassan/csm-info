@@ -9,7 +9,7 @@ const App = () => {
   let heroData = [
     { text1: "Angel", text2: "Devil" },
     { text1: "Weapon", text2: "Hybrids" },
-    { text1: "Control", text2: "Devil" },
+    { text1: "Makima", text2: "" },
   ];
   const [heroCount, setHeroCount] = useState(0);
 
