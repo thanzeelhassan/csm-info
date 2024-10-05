@@ -9,6 +9,7 @@ import Bomb_Girl_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/P
 import International_Assassins_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/6. International Assassins Arc.json";
 import Gun_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/7. Gun Devil Arc.json";
 import Control_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/8. Control Devil Arc.json";
+import Justice_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/1. Justice Devil arc.json";
 
 import { useMemo } from "react";
 import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
@@ -25,6 +26,7 @@ const Discussions = () => {
   );
   const gunDevilArcData = useMemo(() => Gun_Devil_Arc_Data, []);
   const controlDevilArcData = useMemo(() => Control_Devil_Arc_Data, []);
+  const justiceDevilArcData = useMemo(() => Justice_Devil_Arc_Data, []);
 
   return (
     <div>
@@ -83,6 +85,13 @@ const Discussions = () => {
         <div>
           <h1 className="discussion-h2-class">Control Devil Arc</h1>
           <DiscussionTable data={controlDevilArcData} />
+        </div>
+      </div>
+
+      <div className="discussion-background-1 fade-in">
+        <div>
+          <h1 className="discussion-h2-class">Justice Devil Arc </h1>
+          <DiscussionTable data={justiceDevilArcData} />
         </div>
       </div>
     </div>
