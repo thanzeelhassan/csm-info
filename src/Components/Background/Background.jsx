@@ -1,3 +1,4 @@
+import React from "react";
 import "./Background.css";
 import image1 from "../../assets/images/Angel_devil.png";
 import image2 from "../../assets/images/Weapons.jpeg";
