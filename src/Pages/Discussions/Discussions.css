@@ -21,7 +21,6 @@
   width: 100%;
   position: relative; /* Changed from fixed to allow content to scroll */
   object-fit: cover;
-  z-index: -1;
 }
 
 @keyframes fadeIn {

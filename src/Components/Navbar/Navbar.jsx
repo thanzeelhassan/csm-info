@@ -26,6 +26,11 @@ const Navbar = () => {
             Coloured Manga
           </Link>
         </li>
+        <li>
+          <Link to="/csm-info/test" className="nav-link">
+            Test
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Discussions from "./Pages/Discussions/Discussions";
 import ColouredMangaPage from "./Pages/ColouredMangaPage/ColouredMangaPage";
+import Test from "./Pages/Test/Test";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/csm-info/colouredmanga/",
     element: <ColouredMangaPage />,
+  },
+  {
+    path: "/csm-info/test/",
+    element: <Test />,
   },
 ]);
 

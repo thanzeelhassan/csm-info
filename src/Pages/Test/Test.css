@@ -1,0 +1,8 @@
+.discussion-background-2 {
+  min-height: 100%; /* Allows the background to grow with content */
+  padding-bottom: 50px;
+  width: 100%;
+  position: relative; /* Changed from fixed to allow content to scroll */
+  object-fit: cover;
+  /* z-index: -1; */
+}
