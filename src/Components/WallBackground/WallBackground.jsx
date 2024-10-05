@@ -1,3 +1,4 @@
+import React from "react";
 import './WallBackground.css'
 import image1 from '../../assets/images/background/white-wall-bg.jpg'
 import image2 from '../../assets/images/background/black-flowers.jpg'
