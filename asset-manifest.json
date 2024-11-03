@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/csm-info/static/css/main.7be34f11.chunk.css",
-    "main.js": "/csm-info/static/js/main.a3ff9cb4.chunk.js",
-    "main.js.map": "/csm-info/static/js/main.a3ff9cb4.chunk.js.map",
-    "runtime-main.js": "/csm-info/static/js/runtime-main.e8670ef8.js",
-    "runtime-main.js.map": "/csm-info/static/js/runtime-main.e8670ef8.js.map",
-    "static/js/2.c7da04f3.chunk.js": "/csm-info/static/js/2.c7da04f3.chunk.js",
-    "static/js/2.c7da04f3.chunk.js.map": "/csm-info/static/js/2.c7da04f3.chunk.js.map",
-    "static/js/3.a5943634.chunk.js": "/csm-info/static/js/3.a5943634.chunk.js",
-    "static/js/3.a5943634.chunk.js.map": "/csm-info/static/js/3.a5943634.chunk.js.map",
+    "main.js": "/csm-info/static/js/main.15241e9e.chunk.js",
+    "main.js.map": "/csm-info/static/js/main.15241e9e.chunk.js.map",
+    "runtime-main.js": "/csm-info/static/js/runtime-main.27237363.js",
+    "runtime-main.js.map": "/csm-info/static/js/runtime-main.27237363.js.map",
+    "static/js/2.5a1a18a3.chunk.js": "/csm-info/static/js/2.5a1a18a3.chunk.js",
+    "static/js/2.5a1a18a3.chunk.js.map": "/csm-info/static/js/2.5a1a18a3.chunk.js.map",
+    "static/js/3.3563c48f.chunk.js": "/csm-info/static/js/3.3563c48f.chunk.js",
+    "static/js/3.3563c48f.chunk.js.map": "/csm-info/static/js/3.3563c48f.chunk.js.map",
     "index.html": "/csm-info/index.html",
-    "precache-manifest.f84e932c345cd2160c2acef21987dc1c.js": "/csm-info/precache-manifest.f84e932c345cd2160c2acef21987dc1c.js",
+    "precache-manifest.f71ecf814b694231e8cc2ea5c06a16a3.js": "/csm-info/precache-manifest.f71ecf814b694231e8cc2ea5c06a16a3.js",
     "service-worker.js": "/csm-info/service-worker.js",
     "static/css/main.7be34f11.chunk.css.map": "/csm-info/static/css/main.7be34f11.chunk.css.map",
-    "static/js/2.c7da04f3.chunk.js.LICENSE.txt": "/csm-info/static/js/2.c7da04f3.chunk.js.LICENSE.txt",
+    "static/js/2.5a1a18a3.chunk.js.LICENSE.txt": "/csm-info/static/js/2.5a1a18a3.chunk.js.LICENSE.txt",
     "static/media/1296717_800px.jpg": "/csm-info/static/media/1296717_800px.14d01a18.jpg",
     "static/media/Angel_devil.png": "/csm-info/static/media/Angel_devil.830390c4.png",
     "static/media/Makima_eyes.jpg": "/csm-info/static/media/Makima_eyes.13dce76e.jpg",
@@ -22,9 +22,9 @@
     "static/media/github-mark-white.svg": "/csm-info/static/media/github-mark-white.a0b00583.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8670ef8.js",
-    "static/js/2.c7da04f3.chunk.js",
+    "static/js/runtime-main.27237363.js",
+    "static/js/2.5a1a18a3.chunk.js",
     "static/css/main.7be34f11.chunk.css",
-    "static/js/main.a3ff9cb4.chunk.js"
+    "static/js/main.15241e9e.chunk.js"
   ]
 }
