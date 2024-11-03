@@ -10,6 +10,10 @@ import International_Assassins_Arc_Data from "../../assets/discussions/Chainsawm
 import Gun_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/7. Gun Devil Arc.json";
 import Control_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/8. Control Devil Arc.json";
 import Justice_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/1. Justice Devil arc.json";
+import Dating_Denji_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/2. Dating Denji arc.json";
+import Falling_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/3. Falling Devil arc.json";
+import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
+import Current_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/5. Current arc.json";
 
 import { useMemo } from "react";
 import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
@@ -27,6 +31,13 @@ const Discussions = () => {
   const gunDevilArcData = useMemo(() => Gun_Devil_Arc_Data, []);
   const controlDevilArcData = useMemo(() => Control_Devil_Arc_Data, []);
   const justiceDevilArcData = useMemo(() => Justice_Devil_Arc_Data, []);
+  const datingDenjiArcData = useMemo(() => Dating_Denji_Arc_Data, []);
+  const fallingDevilArcData = useMemo(() => Falling_Devil_Arc_Data, []);
+  const chainsawManChurchArcData = useMemo(
+    () => Chainsaw_Man_Church_Arc_Data,
+    []
+  );
+  const currentArcData = useMemo(() => Current_Arc_Data, []);
 
   return (
     <div>
@@ -92,6 +103,33 @@ const Discussions = () => {
         <div>
           <h1 className="discussion-h2-class">Justice Devil Arc </h1>
           <DiscussionTable data={justiceDevilArcData} />
+        </div>
+      </div>
+
+      <div className="discussion-background-1 fade-in">
+        <div>
+          <h1 className="discussion-h2-class">Dating Denji Arc </h1>
+          <DiscussionTable data={datingDenjiArcData} />
+        </div>
+      </div>
+
+      <div className="discussion-background-1 fade-in">
+        <div>
+          <h1 className="discussion-h2-class">Falling Devil Arc </h1>
+          <DiscussionTable data={fallingDevilArcData} />
+        </div>
+      </div>
+
+      <div className="discussion-background-1 fade-in">
+        <div>
+          <h1 className="discussion-h2-class">Chainsaw Man Church Arc </h1>
+          <DiscussionTable data={chainsawManChurchArcData} />
+        </div>
+      </div>
+      <div className="discussion-background-1 fade-in">
+        <div>
+          <h1 className="discussion-h2-class"> Current Arc </h1>
+          <DiscussionTable data={currentArcData} />
         </div>
       </div>
     </div>
