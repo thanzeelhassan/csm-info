@@ -1,30 +1,19 @@
 {
   "files": {
-    "main.css": "/csm-info/static/css/main.7be34f11.chunk.css",
-    "main.js": "/csm-info/static/js/main.15241e9e.chunk.js",
-    "main.js.map": "/csm-info/static/js/main.15241e9e.chunk.js.map",
-    "runtime-main.js": "/csm-info/static/js/runtime-main.27237363.js",
-    "runtime-main.js.map": "/csm-info/static/js/runtime-main.27237363.js.map",
-    "static/js/2.5a1a18a3.chunk.js": "/csm-info/static/js/2.5a1a18a3.chunk.js",
-    "static/js/2.5a1a18a3.chunk.js.map": "/csm-info/static/js/2.5a1a18a3.chunk.js.map",
-    "static/js/3.3563c48f.chunk.js": "/csm-info/static/js/3.3563c48f.chunk.js",
-    "static/js/3.3563c48f.chunk.js.map": "/csm-info/static/js/3.3563c48f.chunk.js.map",
+    "main.css": "/csm-info/static/css/main.2ae8b9bb.css",
+    "main.js": "/csm-info/static/js/main.d9de9f85.js",
+    "static/media/Angel_devil.png": "/csm-info/static/media/Angel_devil.a1f1e4452eeb7548a7a0.png",
+    "static/media/Weapons.jpeg": "/csm-info/static/media/Weapons.78854515fb0e4f078b3c.jpeg",
+    "static/media/Makima_eyes.jpg": "/csm-info/static/media/Makima_eyes.315feafea847cde38cbe.jpg",
+    "static/media/firepunch1.jpg": "/csm-info/static/media/firepunch1.3d7ed9ea400763b52edc.jpg",
+    "static/media/1296717_800px.jpg": "/csm-info/static/media/1296717_800px.b2d5c88cfaefb3d551b9.jpg",
+    "static/media/github-mark-white.svg": "/csm-info/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/csm-info/index.html",
-    "precache-manifest.f71ecf814b694231e8cc2ea5c06a16a3.js": "/csm-info/precache-manifest.f71ecf814b694231e8cc2ea5c06a16a3.js",
-    "service-worker.js": "/csm-info/service-worker.js",
-    "static/css/main.7be34f11.chunk.css.map": "/csm-info/static/css/main.7be34f11.chunk.css.map",
-    "static/js/2.5a1a18a3.chunk.js.LICENSE.txt": "/csm-info/static/js/2.5a1a18a3.chunk.js.LICENSE.txt",
-    "static/media/1296717_800px.jpg": "/csm-info/static/media/1296717_800px.14d01a18.jpg",
-    "static/media/Angel_devil.png": "/csm-info/static/media/Angel_devil.830390c4.png",
-    "static/media/Makima_eyes.jpg": "/csm-info/static/media/Makima_eyes.13dce76e.jpg",
-    "static/media/Weapons.jpeg": "/csm-info/static/media/Weapons.3f8f3fc1.jpeg",
-    "static/media/firepunch1.jpg": "/csm-info/static/media/firepunch1.67e0cb1b.jpg",
-    "static/media/github-mark-white.svg": "/csm-info/static/media/github-mark-white.a0b00583.svg"
+    "main.2ae8b9bb.css.map": "/csm-info/static/css/main.2ae8b9bb.css.map",
+    "main.d9de9f85.js.map": "/csm-info/static/js/main.d9de9f85.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.27237363.js",
-    "static/js/2.5a1a18a3.chunk.js",
-    "static/css/main.7be34f11.chunk.css",
-    "static/js/main.15241e9e.chunk.js"
+    "static/css/main.2ae8b9bb.css",
+    "static/js/main.d9de9f85.js"
   ]
 }
