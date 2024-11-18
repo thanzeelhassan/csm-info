@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/csm-info/static/css/main.2ae8b9bb.css",
-    "main.js": "/csm-info/static/js/main.282e82f6.js",
+    "main.js": "/csm-info/static/js/main.12f456b5.js",
     "static/media/Angel_devil.png": "/csm-info/static/media/Angel_devil.a1f1e4452eeb7548a7a0.png",
     "static/media/Weapons.jpeg": "/csm-info/static/media/Weapons.78854515fb0e4f078b3c.jpeg",
     "static/media/Makima_eyes.jpg": "/csm-info/static/media/Makima_eyes.315feafea847cde38cbe.jpg",
@@ -10,10 +10,10 @@
     "static/media/github-mark-white.svg": "/csm-info/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/csm-info/index.html",
     "main.2ae8b9bb.css.map": "/csm-info/static/css/main.2ae8b9bb.css.map",
-    "main.282e82f6.js.map": "/csm-info/static/js/main.282e82f6.js.map"
+    "main.12f456b5.js.map": "/csm-info/static/js/main.12f456b5.js.map"
   },
   "entrypoints": [
     "static/css/main.2ae8b9bb.css",
-    "static/js/main.282e82f6.js"
+    "static/js/main.12f456b5.js"
   ]
 }
