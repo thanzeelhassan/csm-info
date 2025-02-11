@@ -1,20 +1,20 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./ChainsawManSubreddit.css";
-import Introduction_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/1. Introduction_Arc.json";
-import Bat_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
-import Eternity_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/3. Eternity Devil Arc.json";
-import Katana_Man_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/4. Katana Man Arc.json";
-import Bomb_Girl_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/5. Bomb Girl Arc.json";
-import International_Assassins_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/6. International Assassins Arc.json";
-import Gun_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/7. Gun Devil Arc.json";
-import Control_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/8. Control Devil Arc.json";
-import Justice_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/1. Justice Devil arc.json";
-import Dating_Denji_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/2. Dating Denji arc.json";
-import Falling_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/3. Falling Devil arc.json";
-import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
-import Aging_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/5. Aging Devil arc.json";
-import Current_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/6. Current arc.json";
+import Introduction_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/1. Introduction_Arc.json";
+import Bat_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
+import Eternity_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/3. Eternity Devil Arc.json";
+import Katana_Man_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/4. Katana Man Arc.json";
+import Bomb_Girl_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/5. Bomb Girl Arc.json";
+import International_Assassins_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/6. International Assassins Arc.json";
+import Gun_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/7. Gun Devil Arc.json";
+import Control_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/8. Control Devil Arc.json";
+import Justice_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/1. Justice Devil arc.json";
+import Dating_Denji_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/2. Dating Denji arc.json";
+import Falling_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/3. Falling Devil arc.json";
+import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
+import Aging_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/5. Aging Devil arc.json";
+import Current_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/6. Current arc.json";
 
 import { useMemo } from "react";
 import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
