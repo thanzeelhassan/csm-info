@@ -17,7 +17,7 @@ import Aging_Devil_Arc_Data from "../../assets/discussions/Discussion links for 
 import Current_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/6. Current arc.json";
 
 import { useMemo } from "react";
-import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
+import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable";
 
 const ChainsawFolkSubreddit = () => {
   const introductionArcData = useMemo(() => Introduction_Arc_Data, []);
@@ -68,61 +68,79 @@ const ChainsawFolkSubreddit = () => {
         <br />
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Introduction Arc </h1>
-          <DiscussionTable data={introductionArcData} />
+          <DiscussionTable
+            data={introductionArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
 
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Bat Devil Arc </h1>
-          <DiscussionTable data={batDevilArcData} />
+          <DiscussionTable data={batDevilArcData} subreddit="ChainsawFolk" />
         </div>
 
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Eternity Devil Arc</h1>
-          <DiscussionTable data={eternityDevilArcData} />
+          <DiscussionTable
+            data={eternityDevilArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
 
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Katana Man Arc</h1>
-          <DiscussionTable data={katanaManArcData} />
+          <DiscussionTable data={katanaManArcData} subreddit="ChainsawFolk" />
         </div>
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Bomb Girl Arc</h1>
-          <DiscussionTable data={bombGirlArcData} />
+          <DiscussionTable data={bombGirlArcData} subreddit="ChainsawFolk" />
         </div>
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">
             International Assassins Arc
           </h1>
-          <DiscussionTable data={internationalAssassinsArcData} />
+          <DiscussionTable
+            data={internationalAssassinsArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Gun Devil Arc</h1>
-          <DiscussionTable data={gunDevilArcData} />
+          <DiscussionTable data={gunDevilArcData} subreddit="ChainsawFolk" />
         </div>
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Control Devil Arc</h1>
-          <DiscussionTable data={controlDevilArcData} />
+          <DiscussionTable
+            data={controlDevilArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
       </div>
 
       <div className="ChainsawFolkSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Justice Devil Arc </h1>
-          <DiscussionTable data={justiceDevilArcData} />
+          <DiscussionTable
+            data={justiceDevilArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
       </div>
 
       <div className="ChainsawFolkSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Dating Denji Arc </h1>
-          <DiscussionTable data={datingDenjiArcData} />
+          <DiscussionTable data={datingDenjiArcData} subreddit="ChainsawFolk" />
         </div>
       </div>
 
       <div className="ChainsawFolkSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class">Falling Devil Arc </h1>
-          <DiscussionTable data={fallingDevilArcData} />
+          <DiscussionTable
+            data={fallingDevilArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
       </div>
 
@@ -131,19 +149,22 @@ const ChainsawFolkSubreddit = () => {
           <h1 className="ChainsawFolkSubreddit-h2-class">
             Chainsaw Man Church Arc{" "}
           </h1>
-          <DiscussionTable data={chainsawManChurchArcData} />
+          <DiscussionTable
+            data={chainsawManChurchArcData}
+            subreddit="ChainsawFolk"
+          />
         </div>
       </div>
       <div className="ChainsawFolkSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class"> Aging Devil Arc </h1>
-          <DiscussionTable data={AgingDevilArcData} />
+          <DiscussionTable data={AgingDevilArcData} subreddit="ChainsawFolk" />
         </div>
       </div>
       <div className="ChainsawFolkSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class"> Current Arc </h1>
-          <DiscussionTable data={currentArcData} />
+          <DiscussionTable data={currentArcData} subreddit="ChainsawFolk" />
         </div>
       </div>
     </div>
