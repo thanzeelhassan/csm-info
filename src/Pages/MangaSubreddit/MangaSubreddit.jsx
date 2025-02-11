@@ -13,7 +13,8 @@ import Justice_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subredd
 import Dating_Denji_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/2. Dating Denji arc.json";
 import Falling_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/3. Falling Devil arc.json";
 import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
-import Current_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/5. Current arc.json";
+import Aging_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/5. Aging Devil arc.json";
+import Current_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/6. Current arc.json";
 
 import { useMemo } from "react";
 import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
@@ -37,6 +38,7 @@ const MangaSubreddit = () => {
     () => Chainsaw_Man_Church_Arc_Data,
     []
   );
+  const AgingDevilArcData = useMemo(() => Aging_Devil_Arc_Data, []);
   const currentArcData = useMemo(() => Current_Arc_Data, []);
 
   return (
@@ -126,6 +128,12 @@ const MangaSubreddit = () => {
         <div>
           <h1 className="MangaSubreddit-h2-class">Chainsaw Man Church Arc </h1>
           <DiscussionTable data={chainsawManChurchArcData} />
+        </div>
+      </div>
+      <div className="ChainsawFolkSubreddit-background-1 fade-in">
+        <div>
+          <h1 className="ChainsawFolkSubreddit-h2-class"> Aging Devil Arc </h1>
+          <DiscussionTable data={AgingDevilArcData} />
         </div>
       </div>
       <div className="MangaSubreddit-background-1 fade-in">
