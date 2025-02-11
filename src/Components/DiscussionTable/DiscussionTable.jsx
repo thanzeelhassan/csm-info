@@ -3,7 +3,23 @@ import { useTable } from "react-table";
 import { useMemo } from "react";
 import "./DiscussionTable.css";
 
-const DiscussionTable = ({ data }) => {
+const DiscussionTable = ({ data, subreddit }) => {
+  var accessor = "";
+
+  switch (subreddit) {
+    case "ChainsawMan":
+      accessor = "chainsawman sub reddit thread";
+      break;
+    case "ChainsawFolk":
+      accessor = "chainsawfolk sub reddit thread";
+      break;
+    case "Manga":
+      accessor = "manga sub reddit thread";
+      break;
+    default:
+      console.error("No subreddit data passed");
+  }
+
   const columns = useMemo(
     () => [
       {
@@ -16,7 +32,7 @@ const DiscussionTable = ({ data }) => {
       },
       {
         Header: "Reddit Thread",
-        accessor: "reddit thread",
+        accessor: accessor,
         Cell: ({ value }) => (
           <a href={value} target="_blank" rel="noopener noreferrer">
             Link
@@ -32,7 +48,7 @@ const DiscussionTable = ({ data }) => {
         accessor: "release date",
       },
     ],
-    []
+    [accessor]
   );
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =

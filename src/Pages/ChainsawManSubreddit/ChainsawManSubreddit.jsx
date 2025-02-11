@@ -1,23 +1,23 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./ChainsawManSubreddit.css";
-import Introduction_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/1. Introduction_Arc.json";
-import Bat_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
-import Eternity_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/3. Eternity Devil Arc.json";
-import Katana_Man_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/4. Katana Man Arc.json";
-import Bomb_Girl_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/5. Bomb Girl Arc.json";
-import International_Assassins_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/6. International Assassins Arc.json";
-import Gun_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/7. Gun Devil Arc.json";
-import Control_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 1. Public Safety Saga/8. Control Devil Arc.json";
-import Justice_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/1. Justice Devil arc.json";
-import Dating_Denji_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/2. Dating Denji arc.json";
-import Falling_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/3. Falling Devil arc.json";
-import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
-import Aging_Devil_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/5. Aging Devil arc.json";
-import Current_Arc_Data from "../../assets/discussions/Chainsawman Subreddit/Part 2. Academy Saga/6. Current arc.json";
+import Introduction_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/1. Introduction_Arc.json";
+import Bat_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
+import Eternity_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/3. Eternity Devil Arc.json";
+import Katana_Man_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/4. Katana Man Arc.json";
+import Bomb_Girl_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/5. Bomb Girl Arc.json";
+import International_Assassins_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/6. International Assassins Arc.json";
+import Gun_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/7. Gun Devil Arc.json";
+import Control_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/8. Control Devil Arc.json";
+import Justice_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/1. Justice Devil arc.json";
+import Dating_Denji_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/2. Dating Denji arc.json";
+import Falling_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/3. Falling Devil arc.json";
+import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
+import Aging_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/5. Aging Devil arc.json";
+import Current_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/6. Current arc.json";
 
 import { useMemo } from "react";
-import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable"; // Import the new component
+import DiscussionTable from "../../Components/DiscussionTable/DiscussionTable";
 
 const ChainsawManSubreddit = () => {
   const introductionArcData = useMemo(() => Introduction_Arc_Data, []);
@@ -68,61 +68,67 @@ const ChainsawManSubreddit = () => {
         <br />
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Introduction Arc </h1>
-          <DiscussionTable data={introductionArcData} />
+          <DiscussionTable data={introductionArcData} subreddit="ChainsawMan" />
         </div>
 
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Bat Devil Arc </h1>
-          <DiscussionTable data={batDevilArcData} />
+          <DiscussionTable data={batDevilArcData} subreddit="ChainsawMan" />
         </div>
 
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Eternity Devil Arc</h1>
-          <DiscussionTable data={eternityDevilArcData} />
+          <DiscussionTable
+            data={eternityDevilArcData}
+            subreddit="ChainsawMan"
+          />
         </div>
 
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Katana Man Arc</h1>
-          <DiscussionTable data={katanaManArcData} />
+          <DiscussionTable data={katanaManArcData} subreddit="ChainsawMan" />
         </div>
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Bomb Girl Arc</h1>
-          <DiscussionTable data={bombGirlArcData} />
+          <DiscussionTable data={bombGirlArcData} subreddit="ChainsawMan" />
         </div>
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">
             International Assassins Arc
           </h1>
-          <DiscussionTable data={internationalAssassinsArcData} />
+          <DiscussionTable
+            data={internationalAssassinsArcData}
+            subreddit="ChainsawMan"
+          />
         </div>
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Gun Devil Arc</h1>
-          <DiscussionTable data={gunDevilArcData} />
+          <DiscussionTable data={gunDevilArcData} subreddit="ChainsawMan" />
         </div>
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Control Devil Arc</h1>
-          <DiscussionTable data={controlDevilArcData} />
+          <DiscussionTable data={controlDevilArcData} subreddit="ChainsawMan" />
         </div>
       </div>
 
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Justice Devil Arc </h1>
-          <DiscussionTable data={justiceDevilArcData} />
+          <DiscussionTable data={justiceDevilArcData} subreddit="ChainsawMan" />
         </div>
       </div>
 
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Dating Denji Arc </h1>
-          <DiscussionTable data={datingDenjiArcData} />
+          <DiscussionTable data={datingDenjiArcData} subreddit="ChainsawMan" />
         </div>
       </div>
 
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Falling Devil Arc </h1>
-          <DiscussionTable data={fallingDevilArcData} />
+          <DiscussionTable data={fallingDevilArcData} subreddit="ChainsawMan" />
         </div>
       </div>
 
@@ -131,19 +137,22 @@ const ChainsawManSubreddit = () => {
           <h1 className="ChainsawManSubreddit-h2-class">
             Chainsaw Man Church Arc{" "}
           </h1>
-          <DiscussionTable data={chainsawManChurchArcData} />
+          <DiscussionTable
+            data={chainsawManChurchArcData}
+            subreddit="ChainsawMan"
+          />
         </div>
       </div>
       <div className="ChainsawFolkSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawFolkSubreddit-h2-class"> Aging Devil Arc </h1>
-          <DiscussionTable data={AgingDevilArcData} />
+          <DiscussionTable data={AgingDevilArcData} subreddit="ChainsawMan" />
         </div>
       </div>
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <div>
           <h1 className="ChainsawManSubreddit-h2-class"> Current Arc </h1>
-          <DiscussionTable data={currentArcData} />
+          <DiscussionTable data={currentArcData} subreddit="ChainsawMan" />
         </div>
       </div>
     </div>
