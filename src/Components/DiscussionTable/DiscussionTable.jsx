@@ -16,7 +16,7 @@ const DiscussionTable = ({ data }) => {
       },
       {
         Header: "Reddit Thread",
-        accessor: "reddit thread",
+        accessor: "chainsawman sub reddit thread",
         Cell: ({ value }) => (
           <a href={value} target="_blank" rel="noopener noreferrer">
             Link
