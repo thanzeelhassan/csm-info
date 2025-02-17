@@ -6,23 +6,17 @@ const Discussions = () => {
   return (
     <div className="colouredMangaPage-background fade-in">
       <Navbar />
-      <h1 className="discussion-h1-class">Manga discussion </h1>
       <div className="colouredMangaPage-image-container">
         <div className="colouredMangaPage-image-wrapper">
-          <a href="/csm-info/discussions/ChainsawManSubreddit">
-            <p className="colouredMangaPage-image-text">r/ChainSawMan</p>
+          <a href="/csm-info/discussions/MangaDiscussion">
+            <p className="colouredMangaPage-image-text">Manga discussions</p>
           </a>
         </div>
-
+      </div>
+      <div className="colouredMangaPage-image-container">
         <div className="colouredMangaPage-image-wrapper">
-          <a href="/csm-info/discussions/ChainsawFolkSubreddit">
-            <p className="colouredMangaPage-image-text">r/ChainsawFolk</p>
-          </a>
-        </div>
-
-        <div className="colouredMangaPage-image-wrapper">
-          <a href="/csm-info/discussions/MangaSubreddit">
-            <p className="colouredMangaPage-image-text">r/Manga</p>
+          <a href="/csm-info/discussions/Anime">
+            <p className="colouredMangaPage-image-text">Anime discussions</p>
           </a>
         </div>
       </div>
