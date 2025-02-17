@@ -8,7 +8,7 @@ const Discussions = () => {
       <Navbar />
       <div className="colouredMangaPage-image-container">
         <div className="colouredMangaPage-image-wrapper">
-          <a href="/csm-info/discussions/AllTogether">
+          <a href="/csm-info/discussions/MangaDiscussion">
             <p className="colouredMangaPage-image-text">Manga discussions</p>
           </a>
         </div>
