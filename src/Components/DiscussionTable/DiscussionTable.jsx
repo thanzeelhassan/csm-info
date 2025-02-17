@@ -3,22 +3,10 @@ import { useTable } from "react-table";
 import { useMemo } from "react";
 import "./DiscussionTable.css";
 
-const DiscussionTable = ({ data, subreddit }) => {
-  var accessor = "";
-
-  switch (subreddit) {
-    case "ChainsawMan":
-      accessor = "chainsawman sub reddit thread";
-      break;
-    case "ChainsawFolk":
-      accessor = "chainsawfolk sub reddit thread";
-      break;
-    case "Manga":
-      accessor = "manga sub reddit thread";
-      break;
-    default:
-      console.error("No subreddit data passed");
-  }
+const DiscussionTable = ({ data }) => {
+  var accessor1 = "chainsawman sub reddit thread";
+  var accessor2 = "manga sub reddit thread";
+  var accessor3 = "chainsawfolk sub reddit thread";
 
   const columns = useMemo(
     () => [
@@ -31,8 +19,26 @@ const DiscussionTable = ({ data, subreddit }) => {
         accessor: "chapter title",
       },
       {
-        Header: "Reddit Thread",
-        accessor: accessor,
+        Header: "r/ChainsawMan Reddit Thread",
+        accessor: accessor1,
+        Cell: ({ value }) => (
+          <a href={value} target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        ), // clickable link
+      },
+      {
+        Header: "r/Manga Reddit Thread",
+        accessor: accessor2,
+        Cell: ({ value }) => (
+          <a href={value} target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        ), // clickable link
+      },
+      {
+        Header: "r/ChainsawFolk Reddit Thread",
+        accessor: accessor3,
         Cell: ({ value }) => (
           <a href={value} target="_blank" rel="noopener noreferrer">
             Link
@@ -48,7 +54,7 @@ const DiscussionTable = ({ data, subreddit }) => {
         accessor: "release date",
       },
     ],
-    [accessor]
+    [accessor1, accessor2, accessor3]
   );
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
