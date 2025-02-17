@@ -5,9 +5,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Discussions from "./Pages/Discussions/Discussions";
 import ColouredMangaPage from "./Pages/ColouredMangaPage/ColouredMangaPage";
-import ChainsawManSubreddit from "./Pages/ChainsawManSubreddit/ChainsawManSubreddit";
-import ChainsawFolkSubreddit from "./Pages/ChainsawFolkSubreddit/ChainsawFolkSubreddit";
-import MangaSubreddit from "./Pages/MangaSubreddit/MangaSubreddit";
+import AllTogether from "./Pages/AllTogether/AllTogether";
 
 const router = createBrowserRouter([
   {
@@ -27,16 +25,8 @@ const router = createBrowserRouter([
     element: <ColouredMangaPage />,
   },
   {
-    path: "/csm-info/discussions/ChainsawManSubreddit",
-    element: <ChainsawManSubreddit />,
-  },
-  {
-    path: "/csm-info/discussions/ChainsawFolkSubreddit",
-    element: <ChainsawFolkSubreddit />,
-  },
-  {
-    path: "/csm-info/discussions/MangaSubreddit",
-    element: <MangaSubreddit />,
+    path: "/csm-info/discussions/AllTogether",
+    element: <AllTogether />,
   },
 ]);
 
