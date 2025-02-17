@@ -5,7 +5,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Discussions from "./Pages/Discussions/Discussions";
 import ColouredMangaPage from "./Pages/ColouredMangaPage/ColouredMangaPage";
-import AllTogether from "./Pages/AllTogether/AllTogether";
+import DiscussionPage from "./Pages/MangaDiscussion/MangaDiscussion";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
     element: <ColouredMangaPage />,
   },
   {
-    path: "/csm-info/discussions/AllTogether",
-    element: <AllTogether />,
+    path: "/csm-info/discussions/MangaDiscussion",
+    element: <DiscussionPage />,
   },
 ]);
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { useTable } from "react-table";
 import { useMemo } from "react";
-import "./DiscussionTableTogether.css";
+import "./DiscussionTable.css";
 
-const DiscussionTableTogether = ({ data, subreddit }) => {
+const DiscussionTable = ({ data }) => {
   var accessor1 = "chainsawman sub reddit thread";
   var accessor2 = "manga sub reddit thread";
   var accessor3 = "chainsawfolk sub reddit thread";
@@ -90,4 +90,4 @@ const DiscussionTableTogether = ({ data, subreddit }) => {
   );
 };
 
-export default DiscussionTableTogether;
+export default DiscussionTable;
