@@ -1,9 +1,9 @@
 import React from "react";
 import { useTable } from "react-table";
 import { useMemo } from "react";
-import "./DiscussionTable.css";
+import "./MangaDiscussionTable.css";
 
-const DiscussionTable = ({ data }) => {
+const MangaDiscussionTable = ({ data }) => {
   var accessor1 = "chainsawman sub reddit thread";
   var accessor2 = "manga sub reddit thread";
   var accessor3 = "chainsawfolk sub reddit thread";
@@ -90,4 +90,4 @@ const DiscussionTable = ({ data }) => {
   );
 };
 
-export default DiscussionTable;
+export default MangaDiscussionTable;
