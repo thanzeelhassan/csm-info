@@ -5,7 +5,8 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Discussions from "./Pages/Discussions/Discussions";
 import ColouredMangaPage from "./Pages/ColouredMangaPage/ColouredMangaPage";
-import DiscussionPage from "./Pages/MangaDiscussion/MangaDiscussion";
+import MangaDiscussion from "./Pages/MangaDiscussion/MangaDiscussion";
+import AnimeDiscussion from "./Pages/AnimeDiscussion/AnimeDiscussion";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/csm-info/discussions/MangaDiscussion",
-    element: <DiscussionPage />,
+    element: <MangaDiscussion />,
+  },
+  {
+    path: "/csm-info/discussions/AnimeDiscussion",
+    element: <AnimeDiscussion />,
   },
 ]);
 
