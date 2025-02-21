@@ -5,8 +5,8 @@ import "./AnimeDiscussionTable.css";
 
 const AnimeDiscussionTable = ({ data }) => {
   var accessor1 = "chainsawman sub reddit thread";
-  var accessor2 = "manga sub reddit thread";
-  var accessor3 = "chainsawfolk sub reddit thread";
+  var accessor2 = "anime sub reddit thread";
+  var accessor3 = "csmanime sub reddit thread";
 
   const columns = useMemo(
     () => [
@@ -15,35 +15,44 @@ const AnimeDiscussionTable = ({ data }) => {
         accessor: "episode number",
       },
       {
-        Header: "Episode   Title",
+        Header: "Episode Title",
         accessor: "episode title",
       },
       {
         Header: "r/ChainsawMan Reddit Thread",
         accessor: accessor1,
-        Cell: ({ value }) => (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            Link
-          </a>
-        ), // clickable link
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
       },
       {
-        Header: "r/Manga Reddit Thread",
+        Header: "r/Anime Reddit Thread",
         accessor: accessor2,
-        Cell: ({ value }) => (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            Link
-          </a>
-        ), // clickable link
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
       },
       {
-        Header: "r/ChainsawFolk Reddit Thread",
+        Header: "r/csmanime Reddit Thread",
         accessor: accessor3,
-        Cell: ({ value }) => (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            Link
-          </a>
-        ), // clickable link
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
       },
       {
         Header: "Air Date",
@@ -52,14 +61,6 @@ const AnimeDiscussionTable = ({ data }) => {
       {
         Header: "Air Date English Dub",
         accessor: "air date english dub",
-      },
-      {
-        Header: "Opening song",
-        accessor: "opening song",
-      },
-      {
-        Header: "Ending song",
-        accessor: "ending song",
       },
       {
         Header: "Arc Name",

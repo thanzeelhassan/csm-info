@@ -21,29 +21,38 @@ const MangaDiscussionTable = ({ data }) => {
       {
         Header: "r/ChainsawMan Reddit Thread",
         accessor: accessor1,
-        Cell: ({ value }) => (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            Link
-          </a>
-        ), // clickable link
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
       },
       {
         Header: "r/Manga Reddit Thread",
         accessor: accessor2,
-        Cell: ({ value }) => (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            Link
-          </a>
-        ), // clickable link
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
       },
       {
         Header: "r/ChainsawFolk Reddit Thread",
         accessor: accessor3,
-        Cell: ({ value }) => (
-          <a href={value} target="_blank" rel="noopener noreferrer">
-            Link
-          </a>
-        ), // clickable link
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
       },
       {
         Header: "Volume",
