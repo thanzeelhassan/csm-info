@@ -38,7 +38,7 @@ const AnimeDiscussion = () => {
 
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <div>
-          <h1 className="ChainsawManSubreddit-h2-class">Introduction Arc </h1>
+          <h1 className="ChainsawManSubreddit-h2-class">Season 1</h1>
           <AnimeDiscussionTable data={season1Data} />
         </div>
       </div>
