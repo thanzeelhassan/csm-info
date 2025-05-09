@@ -1,7 +1,7 @@
 npm install -> To install dependencies
 
 $env:NODE_OPTIONS="--openssl-legacy-provider"
-( This is not needed now)
+(This is not needed now)
 
 npm run start -> test locally
 
