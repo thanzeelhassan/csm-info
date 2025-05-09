@@ -57,6 +57,12 @@ const MangaDiscussionTable = ({ data }) => {
       {
         Header: "Volume",
         accessor: "volume number",
+        Cell : ({ value }) =>
+          value ? (
+            value 
+          ) : (
+            "Not released as a volume yet"
+          ),
       },
       {
         Header: "Release Date",
