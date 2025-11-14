@@ -7,6 +7,7 @@ const MangaDiscussionTable = ({ data }) => {
   var accessor1 = "chainsawman sub reddit thread";
   var accessor2 = "manga sub reddit thread";
   var accessor3 = "chainsawfolk sub reddit thread";
+  var accessor4 = "fandom wiki link";
 
   const columns = useMemo(
     () => [
@@ -57,19 +58,26 @@ const MangaDiscussionTable = ({ data }) => {
       {
         Header: "Volume",
         accessor: "volume number",
-        Cell : ({ value }) =>
-          value ? (
-            value 
-          ) : (
-            "Not released as a volume yet"
-          ),
+        Cell: ({ value }) => (value ? value : "Not released as a volume yet"),
       },
       {
         Header: "Release Date",
         accessor: "release date",
       },
+      {
+        Header: "Fandom Wiki Link",
+        accessor: accessor4,
+        Cell: ({ value }) =>
+          value ? (
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          ) : (
+            "Not Available"
+          ),
+      },
     ],
-    [accessor1, accessor2, accessor3]
+    [accessor1, accessor2, accessor3, accessor4]
   );
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
