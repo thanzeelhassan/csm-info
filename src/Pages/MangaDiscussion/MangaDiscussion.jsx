@@ -14,7 +14,7 @@ import Dating_Denji_Arc_Data from "../../assets/discussions/Discussion links for
 import Falling_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/3. Falling Devil arc.json";
 import Chainsaw_Man_Church_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/4. Chainsaw Man Church arc.json";
 import Aging_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/5. Aging Devil arc.json";
-import Current_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/6. Current arc.json";
+import Current_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 2. Academy Saga/6. War Devil arc.json";
 
 import { useMemo } from "react";
 import MangaDiscussionTable from "../../Components/MangaDiscussionTable/MangaDiscussionTable";
@@ -143,7 +143,7 @@ const MangaDiscussion = () => {
       </div>
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <div>
-          <h1 className="ChainsawManSubreddit-h2-class"> Current Arc </h1>
+          <h1 className="ChainsawManSubreddit-h2-class"> War Devil Arc </h1>
           <MangaDiscussionTable data={currentArcData} />
         </div>
       </div>
