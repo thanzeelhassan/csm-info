@@ -13,26 +13,15 @@ const AnimeDiscussion = () => {
       <Navbar> </Navbar>
       <div className="ChainsawManSubreddit-background-1 fade-in">
         <h1 className="ChainsawManSubreddit-h1-class">
-          Chapter Discussion Index{" "}
+          Episode Discussion Index{" "}
         </h1>
         <br />
         <p className="ChainsawManSubreddit-paragraph">
-          List of all chapter discussions on r/ChainsawMan, r/Manga and
-          r/ChainsawFolk.
+          List of all chapter discussions on r/ChainsawMan, r/Anime and
+          r/csmanime.
         </p>
         <br />
-        <p className="ChainsawManSubreddit-paragraph">
-          Chapters have been tabulated and divided into arcs for ease of access
-          for readers.
-        </p>
-        <p className="ChainsawManSubreddit-paragraph">
-          All the release dates are Japanese release dates.
-        </p>
-        <p className="ChainsawManSubreddit-paragraph">
-          The arc name/title and the distribution isn't official and is
-          something that fans made over the course of serialisation of this
-          series.
-        </p>
+
         <br />
       </div>
 
