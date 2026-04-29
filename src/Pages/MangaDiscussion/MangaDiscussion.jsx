@@ -27,7 +27,7 @@ const MangaDiscussion = () => {
   const bombGirlArcData = useMemo(() => Bomb_Girl_Arc_Data, []);
   const internationalAssassinsArcData = useMemo(
     () => International_Assassins_Arc_Data,
-    []
+    [],
   );
   const gunDevilArcData = useMemo(() => Gun_Devil_Arc_Data, []);
   const controlDevilArcData = useMemo(() => Control_Devil_Arc_Data, []);
@@ -36,7 +36,7 @@ const MangaDiscussion = () => {
   const fallingDevilArcData = useMemo(() => Falling_Devil_Arc_Data, []);
   const chainsawManChurchArcData = useMemo(
     () => Chainsaw_Man_Church_Arc_Data,
-    []
+    [],
   );
   const AgingDevilArcData = useMemo(() => Aging_Devil_Arc_Data, []);
   const currentArcData = useMemo(() => Current_Arc_Data, []);
