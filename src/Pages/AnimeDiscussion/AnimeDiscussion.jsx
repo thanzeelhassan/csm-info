@@ -17,7 +17,7 @@ const AnimeDiscussion = () => {
         </h1>
         <br />
         <p className="ChainsawManSubreddit-paragraph">
-          List of all chapter discussions on r/ChainsawMan, r/Anime and
+          List of all episode discussions on r/ChainsawMan, r/Anime and
           r/csmanime.
         </p>
         <br />
