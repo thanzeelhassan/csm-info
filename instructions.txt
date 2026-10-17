@@ -1,10 +1,9 @@
 npm install -> To install dependencies
 
-$env:NODE_OPTIONS="--openssl-legacy-provider"
-(This is not needed now)
+npm run dev -> test locally (Vite, http://localhost:3000)
 
-npm run start -> test locally
+npm test -> run tests
 
-npm run build -> create production build
+npm run build -> create production build (output in build/)
 
 npm upgrade -> to upgrade dependencies
