@@ -21,6 +21,11 @@ const Navbar = () => {
             Discussions
           </Link>
         </li>
+        <li>
+          <Link to="/csm-info/manga" className="nav-link">
+            Manga
+          </Link>
+        </li>
         {/* <li>
           <Link to="/csm-info/colouredManga" className="nav-link">
             Coloured Manga

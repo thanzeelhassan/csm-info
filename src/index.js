@@ -1,12 +1,22 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Discussions from "./Pages/Discussions/Discussions";
-import ColouredMangaPage from "./Pages/ColouredMangaPage/ColouredMangaPage";
-import MangaDiscussion from "./Pages/MangaDiscussion/MangaDiscussion";
-import AnimeDiscussion from "./Pages/AnimeDiscussion/AnimeDiscussion";
+
+// Inner pages are split into their own chunks so the home page doesn't have
+// to download every discussion table's data before it can render.
+const Discussions = lazy(() => import("./Pages/Discussions/Discussions"));
+const ColouredMangaPage = lazy(() =>
+  import("./Pages/ColouredMangaPage/ColouredMangaPage")
+);
+const MangaDiscussion = lazy(() =>
+  import("./Pages/MangaDiscussion/MangaDiscussion")
+);
+const AnimeDiscussion = lazy(() =>
+  import("./Pages/AnimeDiscussion/AnimeDiscussion")
+);
+const MangaPage = lazy(() => import("./Pages/MangaPage/MangaPage"));
 
 const router = createBrowserRouter([
   {
@@ -26,6 +36,10 @@ const router = createBrowserRouter([
     element: <ColouredMangaPage />,
   },
   {
+    path: "/csm-info/manga/",
+    element: <MangaPage />,
+  },
+  {
     path: "/csm-info/discussions/MangaDiscussion",
     element: <MangaDiscussion />,
   },
@@ -38,6 +52,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={null}>
+      <RouterProvider router={router} />
+    </Suspense>
   </React.StrictMode>
 );
