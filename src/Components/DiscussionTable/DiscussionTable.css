@@ -53,3 +53,16 @@
     padding: 10px;
   }
 }
+
+/* The browser's default blue is barely readable on the teal background. */
+.discussion-container a,
+.discussion-container a:visited {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.discussion-container a:hover {
+  text-decoration-thickness: 3px;
+}
