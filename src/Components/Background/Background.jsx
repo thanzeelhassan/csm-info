@@ -18,14 +18,19 @@ const preloadOtherSlides = () => {
 
 const Background = ({ heroCount }) => {
   return (
-    <img
-      key={heroCount}
-      src={images[heroCount]}
-      className="background-image fade-in"
-      alt=""
-      fetchpriority={heroCount === 0 ? "high" : undefined}
-      onLoad={heroCount === 0 ? preloadOtherSlides : undefined}
-    />
+    <>
+      <img
+        key={heroCount}
+        src={images[heroCount]}
+        className="background-image fade-in"
+        alt=""
+        fetchpriority={heroCount === 0 ? "high" : undefined}
+        onLoad={heroCount === 0 ? preloadOtherSlides : undefined}
+      />
+      {/* Darkens the top and bottom so the white navbar and hero text stay
+          readable over bright slides. */}
+      <div className="background-shade" />
+    </>
   );
 };
 Background.propTypes = {
