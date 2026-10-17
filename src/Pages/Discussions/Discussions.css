@@ -1,55 +1,63 @@
-.discussion-h1-class {
-  color: black;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 50px;
-  text-shadow: 0 0 5px white;
-}
-
-.discussion-h2-class {
-  color: black;
-  text-align: left;
-  margin-top: 20px;
-  font-size: 30px;
-  text-shadow: 0 0 5px white;
-  margin-left: 25%;
-}
-
-.discussion-background-1 {
-  min-height: 100%; /* Allows the background to grow with content */
-  padding-bottom: 50px;
-  width: 100%;
-  position: relative; /* Changed from fixed to allow content to scroll */
-  object-fit: cover;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 500ms ease-in-out;
-}
-
-body {
-  margin: 20;
-  background: -webkit-linear-gradient(45deg, #49a09d, #008194);
+.discussions-page {
+  display: flow-root; /* keep the navbar's margin inside the gradient */
+  min-height: 100vh;
   background: linear-gradient(45deg, #49a09d, #008194);
-  font-family: sans-serif;
-  font-weight: 100;
-  height: auto; /* Allow body to adjust to content height */
-  z-index: -3;
 }
 
-.discussion-paragraph {
+.discussions-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 60px 16px;
+}
+
+.discussions-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 640px;
+  padding: 40px 32px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  color: white;
   text-align: center;
-  width: 50%;
-  margin: auto;
-  font-size: 30px;
-  font-weight: 100;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.discussions-card:hover {
+  transform: translateY(-4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.discussions-card-title {
+  font-family: Outfit, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.discussions-card:hover .discussions-card-title {
+  color: yellow;
+}
+
+.discussions-card-description {
+  font-size: 18px;
+  font-weight: 500;
+  color: #eee;
+}
+
+@media (max-width: 600px) {
+  .discussions-card-title {
+    font-size: 32px;
+  }
+
+  .discussions-card-description {
+    font-size: 16px;
+  }
 }
