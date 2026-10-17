@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import NotFound from "./Pages/NotFound/NotFound";
 import {
   createBrowserRouter,
   Navigate,
@@ -42,6 +43,8 @@ const router = createBrowserRouter([
     path: from,
     element: <Navigate to={to} replace />,
   })),
+
+  { path: "*", element: <NotFound /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

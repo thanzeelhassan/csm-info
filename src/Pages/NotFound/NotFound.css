@@ -1,0 +1,66 @@
+.notFound-page {
+  display: flow-root; /* keep the navbar's margin inside the gradient */
+  min-height: 100vh;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  color: white;
+}
+
+.notFound-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 16px;
+  text-align: center;
+}
+
+.notFound-code {
+  font-family: Outfit, sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.notFound-title {
+  font-family: Outfit, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.notFound-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.notFound-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.notFound-link {
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.notFound-link:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+}
+
+@media (max-width: 600px) {
+  .notFound-code {
+    font-size: 88px;
+  }
+
+  .notFound-title {
+    font-size: 28px;
+  }
+}
