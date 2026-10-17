@@ -6,31 +6,26 @@ const Navbar = () => {
   return (
     <div className="nav">
       <div className="nav-logo">
-        <Link to="/csm-info" className="nav-link">
+        <Link to="/" className="nav-link">
           CSM Info
         </Link>
       </div>
       <ul className="nav-menu">
         <li>
-          <Link to="/csm-info" className="nav-link">
+          <Link to="/" className="nav-link">
             Home
           </Link>
         </li>
         <li>
-          <Link to="/csm-info/discussions" className="nav-link">
+          <Link to="/discussions" className="nav-link">
             Discussions
           </Link>
         </li>
         <li>
-          <Link to="/csm-info/manga" className="nav-link">
+          <Link to="/manga" className="nav-link">
             Manga
           </Link>
         </li>
-        {/* <li>
-          <Link to="/csm-info/colouredManga" className="nav-link">
-            Coloured Manga
-          </Link>
-        </li> */}
       </ul>
     </div>
   );

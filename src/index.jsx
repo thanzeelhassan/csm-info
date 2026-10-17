@@ -2,7 +2,11 @@ import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 
 // Inner pages are split into their own chunks so the home page doesn't have
 // to download every discussion table's data before it can render.
@@ -19,34 +23,25 @@ const AnimeDiscussion = lazy(() =>
 const MangaPage = lazy(() => import("./Pages/MangaPage/MangaPage"));
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/csm-info/",
-    element: <App />,
-  },
-  {
-    path: "/csm-info/discussions/",
-    element: <Discussions />,
-  },
-  {
-    path: "/csm-info/colouredmanga/",
-    element: <ColouredMangaPage />,
-  },
-  {
-    path: "/csm-info/manga/",
-    element: <MangaPage />,
-  },
-  {
-    path: "/csm-info/discussions/MangaDiscussion",
-    element: <MangaDiscussion />,
-  },
-  {
-    path: "/csm-info/discussions/AnimeDiscussion",
-    element: <AnimeDiscussion />,
-  },
+  { path: "/", element: <App /> },
+  { path: "/discussions", element: <Discussions /> },
+  { path: "/discussions/manga", element: <MangaDiscussion /> },
+  { path: "/discussions/anime", element: <AnimeDiscussion /> },
+  { path: "/manga", element: <MangaPage /> },
+  { path: "/manga/coloured", element: <ColouredMangaPage /> },
+
+  // Old GitHub Pages-era URLs, kept so existing links and bookmarks work.
+  ...Object.entries({
+    "/csm-info": "/",
+    "/csm-info/discussions": "/discussions",
+    "/csm-info/discussions/MangaDiscussion": "/discussions/manga",
+    "/csm-info/discussions/AnimeDiscussion": "/discussions/anime",
+    "/csm-info/manga": "/manga",
+    "/csm-info/colouredmanga": "/manga/coloured",
+  }).map(([from, to]) => ({
+    path: from,
+    element: <Navigate to={to} replace />,
+  })),
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

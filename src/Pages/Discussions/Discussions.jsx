@@ -5,12 +5,12 @@ import "./Discussions.css";
 
 const discussionLinks = [
   {
-    to: "/csm-info/discussions/MangaDiscussion",
+    to: "/discussions/manga",
     title: "Manga Discussions",
     description: "Every chapter thread on r/ChainsawMan, r/manga and r/Chainsawfolk",
   },
   {
-    to: "/csm-info/discussions/AnimeDiscussion",
+    to: "/discussions/anime",
     title: "Anime Discussions",
     description: "Every episode thread on r/ChainsawMan, r/anime and r/csmanime",
   },
