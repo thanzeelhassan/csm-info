@@ -54,3 +54,16 @@
     font-weight: 100;
   }
   
+.ChainsawManSubreddit-source {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.ChainsawManSubreddit-source a {
+  color: black;
+  font-weight: 400;
+}
+
+.ChainsawManSubreddit-source a:hover {
+  color: yellow;
+}

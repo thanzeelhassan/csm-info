@@ -13,13 +13,14 @@ const App = () => {
   ];
   const [heroCount, setHeroCount] = useState(0);
 
+  // Restart the 5s timer whenever the slide changes (including dot clicks),
+  // and clear it on unmount so intervals don't pile up.
   useEffect(() => {
-    setInterval(() => {
-      setHeroCount((count) => {
-        return count === 2 ? 0 : count + 1;
-      });
+    const timer = setTimeout(() => {
+      setHeroCount((count) => (count === 2 ? 0 : count + 1));
     }, 5000);
-  }, []);
+    return () => clearTimeout(timer);
+  }, [heroCount]);
 
   return (
     <div>

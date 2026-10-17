@@ -66,6 +66,16 @@ const MangaDiscussion = () => {
           something that fans made over the course of serialisation of this
           series.
         </p>
+        <p className="ChainsawManSubreddit-paragraph ChainsawManSubreddit-source">
+          Source:{" "}
+          <a
+            href="https://www.reddit.com/r/ChainsawMan/wiki/chapter-discussions/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            r/ChainsawMan chapter discussions wiki
+          </a>
+        </p>
         <br />
         <div>
           <h1 className="ChainsawManSubreddit-h2-class">Introduction Arc </h1>
