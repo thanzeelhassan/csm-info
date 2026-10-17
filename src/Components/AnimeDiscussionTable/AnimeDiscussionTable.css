@@ -12,7 +12,8 @@ html {
 
 .discussion-container {
   max-height: 600px;
-  overflow-y: auto; /* Enables vertical scrolling if content exceeds 600px */
+  overflow: auto; /* Scrolls both ways, so wide tables still fit on phones */
+  -webkit-overflow-scrolling: touch;
   margin: 20px auto; /* Centers the container */
   width: 90%; /* Adjust the width as needed */
   max-width: 2500px; /* Set a max-width for larger screens */
@@ -22,9 +23,9 @@ html {
 table {
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   table-layout: fixed; /* Ensures the table columns have consistent widths */
+  min-width: 1100px; /* Keep columns readable; the container scrolls instead */
 }
 
 th,
@@ -40,6 +41,9 @@ th {
 }
 
 thead th {
+  position: sticky; /* Keep column names visible while scrolling */
+  top: 0;
+  z-index: 1;
   background-color: #e5e1db;
   font-weight: 600;
 }
@@ -65,4 +69,17 @@ a {
 td a {
   position: relative;
   z-index: 1; /* Puts the link on top of any other content */
+}
+
+@media (max-width: 700px) {
+  .discussion-container {
+    width: auto;
+    margin: 16px;
+    font-size: 15px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
 }
