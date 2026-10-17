@@ -24,3 +24,8 @@ body {
 .fade-in {
   animation: fadeIn 500ms ease-in-out;
 }
+
+:focus-visible {
+  outline: 3px solid yellow;
+  outline-offset: 3px;
+}

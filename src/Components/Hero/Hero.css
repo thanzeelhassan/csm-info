@@ -44,10 +44,14 @@
 }
 
 .hero-dot {
+  display: block;
   width: 15px;
   height: 15px;
+  padding: 0;
+  border: none;
   background: #fff;
   border-radius: 7.5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
 
