@@ -31,7 +31,10 @@ const Hero = ({ heroData, setHeroCount, heroCount }) => {
 };
 Hero.propTypes = {
   heroCount: PropTypes.number.isRequired,
-  heroData: PropTypes.array.isRequired,
+  heroData: PropTypes.shape({
+    text1: PropTypes.string,
+    text2: PropTypes.string,
+  }).isRequired,
   setHeroCount: PropTypes.func.isRequired,
 };
 

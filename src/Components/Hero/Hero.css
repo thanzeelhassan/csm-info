@@ -65,3 +65,19 @@
   color: #fff;
   font-size: 19px;
 }
+
+@media (max-width: 900px) {
+  .hero {
+    margin: 0 24px;
+    margin-top: 40vh;
+  }
+
+  .hero-text {
+    font-size: 64px;
+    line-height: 76px;
+  }
+
+  .hero-dot-play {
+    margin-top: 60px;
+  }
+}
