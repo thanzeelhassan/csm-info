@@ -1,0 +1,69 @@
+/* Shared by the Manga and Anime discussion pages. */
+.discussion-page {
+  display: flow-root; /* keep the navbar margin inside the gradient */
+  min-height: 100vh;
+  background: linear-gradient(45deg, #49a09d, #008194);
+}
+
+.discussion-section {
+  padding-bottom: 50px;
+}
+
+.discussion-title {
+  color: black;
+  text-align: center;
+  padding: 20px 16px 0;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.discussion-heading {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 1600px;
+  margin: 20px auto 0;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.discussion-paragraph {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.discussion-source {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.discussion-source a {
+  color: black;
+  font-weight: 600;
+}
+
+.discussion-source a:hover {
+  text-decoration-thickness: 3px;
+}
+
+@media (max-width: 700px) {
+  .discussion-title {
+    font-size: 34px;
+  }
+
+  .discussion-heading {
+    width: auto;
+    margin: 20px 16px 0;
+    font-size: 24px;
+  }
+
+  .discussion-paragraph {
+    font-size: 18px;
+  }
+}

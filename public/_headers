@@ -1,4 +1,4 @@
-# Build files in /static have content hashes in their names, so they can be
+# Build files in /assets have content hashes in their names, so they can be
 # cached forever. index.html is left alone so new deploys show up immediately.
-/static/*
+/assets/*
   Cache-Control: public, max-age=31536000, immutable

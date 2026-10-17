@@ -2,7 +2,11 @@ import React from "react";
 import "./Hero.css";
 import PropTypes from "prop-types";
 
-const Hero = ({ heroData, setHeroCount, heroCount }) => {
+const slideName = (slide) => [slide.text1, slide.text2].join(" ").trim();
+
+const Hero = ({ slides, setHeroCount, heroCount }) => {
+  const heroData = slides[heroCount];
+
   return (
     <div className="hero">
       <div className="hero-text">
@@ -11,18 +15,17 @@ const Hero = ({ heroData, setHeroCount, heroCount }) => {
       </div>
       <div className="hero-dot-play">
         <ul className="hero-dots">
-          <li
-            onClick={() => setHeroCount(0)}
-            className={heroCount === 0 ? "hero-dot orange" : "hero-dot"}
-          ></li>
-          <li
-            onClick={() => setHeroCount(1)}
-            className={heroCount === 1 ? "hero-dot orange" : "hero-dot"}
-          ></li>
-          <li
-            onClick={() => setHeroCount(2)}
-            className={heroCount === 2 ? "hero-dot orange" : "hero-dot"}
-          ></li>
+          {slides.map((slide, index) => (
+            <li key={slideName(slide)}>
+              <button
+                type="button"
+                onClick={() => setHeroCount(index)}
+                className={heroCount === index ? "hero-dot orange" : "hero-dot"}
+                aria-label={`Show slide ${index + 1}: ${slideName(slide)}`}
+                aria-current={heroCount === index ? "true" : undefined}
+              />
+            </li>
+          ))}
         </ul>
         <div className="hero-play"></div>
       </div>
@@ -31,10 +34,12 @@ const Hero = ({ heroData, setHeroCount, heroCount }) => {
 };
 Hero.propTypes = {
   heroCount: PropTypes.number.isRequired,
-  heroData: PropTypes.shape({
-    text1: PropTypes.string,
-    text2: PropTypes.string,
-  }).isRequired,
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      text1: PropTypes.string,
+      text2: PropTypes.string,
+    })
+  ).isRequired,
   setHeroCount: PropTypes.func.isRequired,
 };
 

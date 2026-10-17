@@ -1,68 +1,74 @@
-.ChainsawManSubreddit-h1-class {
-    color: black;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 50px;
-    text-shadow: 0 0 5px white;
-  }
-  
-  .ChainsawManSubreddit-h2-class {
-    color: black;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 30px;
-    text-shadow: 0 0 5px white;
-    margin-left: 25%;
-  }
-  
-  .ChainsawManSubreddit-background-1 {
-    min-height: 100%; /* Allows the background to grow with content */
-    padding-bottom: 50px;
-    width: 100%;
-    position: relative; /* Changed from fixed to allow content to scroll */
-    object-fit: cover;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fade-in {
-    animation: fadeIn 500ms ease-in-out;
-  }
-  
-  body {
-    margin: 20;
-    background: -webkit-linear-gradient(45deg, #49a09d, #008194);
-    background: linear-gradient(45deg, #49a09d, #008194);
-    font-weight: 400;
-    height: auto; /* Allow body to adjust to content height */
-    z-index: -3;
-  }
-  
-  .ChainsawManSubreddit-paragraph {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    font-size: 26px;
-    font-weight: 500;
-  }
-  
-.ChainsawManSubreddit-source {
-  margin-top: 16px;
-  font-size: 22px;
+.mangaDiscussion-toolbar {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 16px;
+  text-align: center;
 }
 
-.ChainsawManSubreddit-source a {
+.mangaDiscussion-search-label {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mangaDiscussion-search {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  font-size: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.mangaDiscussion-arc-nav {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mangaDiscussion-arc-group-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mangaDiscussion-arc-group ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mangaDiscussion-arc-group a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mangaDiscussion-arc-group a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+}
+
+.mangaDiscussion-arc {
+  scroll-margin-top: 16px;
+}
+
+.mangaDiscussion-back-to-top {
+  display: block;
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto 30px;
+  text-align: right;
   color: black;
   font-weight: 600;
-}
-
-.ChainsawManSubreddit-source a:hover {
-  color: yellow;
 }

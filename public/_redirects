@@ -1,1 +1,10 @@
-/* /index.html 200
+# Old URLs from when the site lived under /csm-info on GitHub Pages
+/csm-info                                 /                    301!
+/csm-info/discussions                     /discussions         301!
+/csm-info/discussions/MangaDiscussion     /discussions/manga   301!
+/csm-info/discussions/AnimeDiscussion     /discussions/anime   301!
+/csm-info/manga                           /manga               301!
+/csm-info/colouredmanga                   /manga/coloured      301!
+
+# Single-page app: let React Router handle every other path
+/*    /index.html   200
