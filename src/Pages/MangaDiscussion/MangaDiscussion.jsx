@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import "../../styles/discussionPage.css";
 import "./MangaDiscussion.css";
 import Introduction_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/1. Introduction_Arc.json";
 import Bat_Devil_Arc_Data from "../../assets/discussions/Discussion links for all subs/Part 1. Public Safety Saga/2. Bat Devil Arc.json";
@@ -75,31 +76,31 @@ const MangaDiscussion = () => {
   );
 
   return (
-    <div>
+    <div className="discussion-page">
       <Navbar />
-      <div className="ChainsawManSubreddit-background-1 fade-in">
-        <h1 className="ChainsawManSubreddit-h1-class">
+      <div className="discussion-section fade-in">
+        <h1 className="discussion-title">
           Chapter Discussion Index
         </h1>
         <br />
-        <p className="ChainsawManSubreddit-paragraph">
+        <p className="discussion-paragraph">
           List of all chapter discussions on r/ChainsawMan, r/Manga and
           r/ChainsawFolk.
         </p>
         <br />
-        <p className="ChainsawManSubreddit-paragraph">
+        <p className="discussion-paragraph">
           Chapters have been tabulated and divided into arcs for ease of access
           for readers.
         </p>
-        <p className="ChainsawManSubreddit-paragraph">
+        <p className="discussion-paragraph">
           All the release dates are Japanese release dates.
         </p>
-        <p className="ChainsawManSubreddit-paragraph">
+        <p className="discussion-paragraph">
           The arc name/title and the distribution isn't official and is
           something that fans made over the course of serialisation of this
           series.
         </p>
-        <p className="ChainsawManSubreddit-paragraph ChainsawManSubreddit-source">
+        <p className="discussion-paragraph discussion-source">
           Source:{" "}
           <a
             href="https://www.reddit.com/r/ChainsawMan/wiki/chapter-discussions/"
@@ -143,8 +144,8 @@ const MangaDiscussion = () => {
       </div>
 
       {results ? (
-        <div className="ChainsawManSubreddit-background-1">
-          <h2 className="ChainsawManSubreddit-h2-class">
+        <div className="discussion-section">
+          <h2 className="discussion-heading">
             {results.length === 1
               ? "1 chapter found"
               : `${results.length} chapters found`}
@@ -153,14 +154,14 @@ const MangaDiscussion = () => {
         </div>
       ) : (
         parts.map((part) => (
-          <div key={part.name} className="ChainsawManSubreddit-background-1">
+          <div key={part.name} className="discussion-section">
             {part.arcs.map((arc) => (
               <section
                 key={arc.name}
                 id={arcId(arc.name)}
                 className="mangaDiscussion-arc"
               >
-                <h2 className="ChainsawManSubreddit-h2-class">{arc.name}</h2>
+                <h2 className="discussion-heading">{arc.name}</h2>
                 <MangaDiscussionTable data={arc.data} />
                 <a href="#top" className="mangaDiscussion-back-to-top">
                   Back to top
