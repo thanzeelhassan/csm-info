@@ -1,116 +1,30 @@
-import React from "react";
-import { useTable } from "react-table";
-import { useMemo } from "react";
-import "./MangaDiscussionTable.css";
+import React, { useMemo } from "react";
+import PropTypes from "prop-types";
+import DiscussionTable, { LinkCell } from "../DiscussionTable/DiscussionTable";
 
 const MangaDiscussionTable = ({ data }) => {
-  var accessor1 = "chainsawman sub reddit thread";
-  var accessor2 = "manga sub reddit thread";
-  var accessor3 = "chainsawfolk sub reddit thread";
-  var accessor4 = "fandom wiki link";
-
   const columns = useMemo(
     () => [
-      {
-        Header: "Chapter Number",
-        accessor: "chapter number",
-      },
-      {
-        Header: "Chapter Title",
-        accessor: "chapter title",
-      },
-      {
-        Header: "r/ChainsawMan Reddit Thread",
-        accessor: accessor1,
-        Cell: ({ value }) =>
-          value ? (
-            <a href={value} target="_blank" rel="noopener noreferrer">
-              Link
-            </a>
-          ) : (
-            "Not Available"
-          ),
-      },
-      {
-        Header: "r/Manga Reddit Thread",
-        accessor: accessor2,
-        Cell: ({ value }) =>
-          value ? (
-            <a href={value} target="_blank" rel="noopener noreferrer">
-              Link
-            </a>
-          ) : (
-            "Not Available"
-          ),
-      },
-      {
-        Header: "r/ChainsawFolk Reddit Thread",
-        accessor: accessor3,
-        Cell: ({ value }) =>
-          value ? (
-            <a href={value} target="_blank" rel="noopener noreferrer">
-              Link
-            </a>
-          ) : (
-            "Not Available"
-          ),
-      },
+      { Header: "Chapter Number", accessor: "chapter number" },
+      { Header: "Chapter Title", accessor: "chapter title" },
+      { Header: "r/ChainsawMan Reddit Thread", accessor: "chainsawman sub reddit thread", Cell: LinkCell },
+      { Header: "r/Manga Reddit Thread", accessor: "manga sub reddit thread", Cell: LinkCell },
+      { Header: "r/ChainsawFolk Reddit Thread", accessor: "chainsawfolk sub reddit thread", Cell: LinkCell },
       {
         Header: "Volume",
         accessor: "volume number",
-        Cell: ({ value }) => (value ? value : "Not released as a volume yet"),
+        Cell: ({ value }) => value || "Not released as a volume yet",
       },
-      {
-        Header: "Release Date",
-        accessor: "release date",
-      },
-      {
-        Header: "Fandom Wiki Link",
-        accessor: accessor4,
-        Cell: ({ value }) =>
-          value ? (
-            <a href={value} target="_blank" rel="noopener noreferrer">
-              Link
-            </a>
-          ) : (
-            "Not Available"
-          ),
-      },
+      { Header: "Release Date", accessor: "release date" },
+      { Header: "Fandom Wiki Link", accessor: "fandom wiki link", Cell: LinkCell },
     ],
-    [accessor1, accessor2, accessor3, accessor4]
+    []
   );
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({ columns, data });
-
-  return (
-    <div className="discussion-container">
-      <table {...getTableProps()}>
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps()}>{column.render("Header")}</th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-
-        <tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => (
-                  <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                ))}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
+  return <DiscussionTable columns={columns} data={data} />;
+};
+MangaDiscussionTable.propTypes = {
+  data: PropTypes.array.isRequired,
 };
 
 export default MangaDiscussionTable;
