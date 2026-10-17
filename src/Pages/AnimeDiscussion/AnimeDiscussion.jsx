@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import "../MangaDiscussion/MangaDiscussion.css";
 import "./AnimeDiscussion.css";
 import Season_1_Data from "../../assets/anime discussions/1. season_1.json";
 import { useMemo } from "react";

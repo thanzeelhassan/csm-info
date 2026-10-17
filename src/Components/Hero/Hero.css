@@ -6,9 +6,9 @@
 .hero-text {
   color: white;
   font-size: 110px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 130px;
-  text-shadow: 0 0 50px black;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 0 0 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-explore {

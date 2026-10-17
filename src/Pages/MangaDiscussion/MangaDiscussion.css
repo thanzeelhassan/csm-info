@@ -40,8 +40,7 @@
     margin: 20;
     background: -webkit-linear-gradient(45deg, #49a09d, #008194);
     background: linear-gradient(45deg, #49a09d, #008194);
-    font-family: sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     height: auto; /* Allow body to adjust to content height */
     z-index: -3;
   }
@@ -50,8 +49,8 @@
     text-align: center;
     width: 50%;
     margin: auto;
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 26px;
+    font-weight: 500;
   }
   
 .ChainsawManSubreddit-source {
@@ -61,7 +60,7 @@
 
 .ChainsawManSubreddit-source a {
   color: black;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .ChainsawManSubreddit-source a:hover {
