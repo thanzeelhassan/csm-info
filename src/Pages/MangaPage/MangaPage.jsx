@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./MangaPage.css";
 import chainsawman_image from "../../assets/images/1296717_800px.jpg";
@@ -46,6 +47,10 @@ const MangaPage = () => {
             </li>
           ))}
         </ul>
+
+        <Link to="/manga/coloured" className="mangaPage-coloured-link">
+          Looking for the fan-coloured editions? →
+        </Link>
       </div>
     </div>
   );

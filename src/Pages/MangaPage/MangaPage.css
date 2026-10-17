@@ -72,3 +72,15 @@
   font-size: 1em;
   color: #ddd;
 }
+
+.mangaPage-coloured-link {
+  margin-top: 32px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.mangaPage-coloured-link:hover {
+  color: yellow;
+}
